@@ -4,6 +4,19 @@
 ## 📌 Project Overview
 Electrical grid reliability is critical for minimizing service disruptions and ensuring continuous energy delivery. This project was developed to evaluate the quantitative impact of scheduled grid maintenance operations on power outages across various regional operational centers. By transforming raw grid telemetry and maintenance logs into actionable business intelligence, the dashboard provides deep analytical visibility into how proactive interventions influence fault frequencies, customer disruptions, and total outage durations.
 
+### 🏗️ Project Architecture & Workflow
+The end-to-end data lifecycle of this project was meticulously designed following industry best practices:
+1. **Data Preparation & Cleaning (Python & Excel):** Raw outage logs and field telemetry were initially ingested, cleaned, and structured using Python (`pandas`) and Excel to handle missing values, standardize timestamps, and normalize categorical fields.
+2. **ETL & Transformation (Power Query):** The cleaned data was loaded into Power Query for advanced data transformation, conditional column creation, and mapping operational hierarchies.
+3. **Data Modeling (Star Schema):** Built a robust **Star Schema** architecture, separating fact tables (outage events, durations, and affected customer counts) from dimension tables (operational centers, voltage levels, and maintenance status) to ensure optimal query performance and relational integrity.
+4. **Advanced Analytics & DAX:** Developed complex DAX measures (calculating pre- and post-maintenance variance, percentage changes, and aggregated KPIs) to enable dynamic comparisons.
+5. **Interactive Visualization (Power BI):** Designed executive-ready dashboards featuring clean card visuals, dual-axis trend lines, breakdown pie charts, and synchronized regional filters.
+
+### 🎯 Key Business Questions Addressed
+* **What is the measurable ROI of preventive maintenance?** Quantifying whether scheduled interventions effectively suppress recurring fault frequencies and shorten restoration times.
+* **Where should field operations and capital allocation focus?** Identifying high-impact operational centers and voltage tiers that drive the vast majority of customer disruptions.
+* **How do Medium Voltage (MV) vs. Low Voltage (LV) incidents differ in scale?** Comparing trunk-line stability against localized distribution bottlenecks.
+
 > **🔒 Data Privacy Notice:** Due to strict company confidentiality, all original datasets and the Power BI Template (`.pbit`) file have been permanently excluded. This repository showcases the project design, visual structures, and analytical insights exclusively through documentation and screenshots.
 
 ### 📊 Dashboard Views & Analytical Insights
@@ -70,17 +83,10 @@ Electrical grid reliability is critical for minimizing service disruptions and e
 </p>
 > 💡 *Key Insight:* Quantifies a consistent 25% to 45% contraction in total outage durations across regional operational centers, proving that maintenance optimization directly translates to minimized downtime and maximized service continuity.
 
-### 🎯 Key Metrics & Visualizations
-The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
-*   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
-*   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
-*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers, highlighting the critical 97.11% MV vs. 2.89% LV customer exposure distribution.
-*   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
-
 ### 🛠️ Tools & Techniques
-*   **Business Intelligence:** Power BI
-*   **Data Preparation & Processing:** Python, Excel, Power Query
-*   **Data Modeling:** Star Schema
+*   **Business Intelligence:** Power BI (DAX, Interactive Slicers, Custom Tooltips)
+*   **Data Engineering & ETL:** Python (`pandas`), Excel, Power Query
+*   **Data Modeling:** Star Schema Architecture (Fact & Dimension Tables)
 *   **Languages:** Python, DAX (Data Analysis Expressions)
 
 ---
@@ -89,6 +95,19 @@ The dashboard focuses on translating raw grid data into actionable business inte
 
 ## 📌 Proje Özeti
 Elektrik şebekesi güvenilirliği, enerji kesintilerinin en aza indirilmesi ve kesintisiz enerji arzının sağlanması açısından hayati önem taşır. Bu proje, planlı şebeke bakım operasyonlarının farklı bölgesel operasyon merkezlerindeki güç kesintileri üzerindeki kantitatif etkisini değerlendirmek amacıyla geliştirilmiştir. Ham şebeke verileri ve bakım logları iş zekasına dönüştürülerek; proaktif müdahalelerin arıza sıklıklarını, müşteri mağduriyetlerini ve toplam kesinti sürelerini nasıl optimize ettiğine dair derinlemesine analitik içgörüler sunulmuştur.
+
+### 🏗️ Proje Mimarisi ve İş Akışı
+Bu projenin uçtan uca veri yaşam döngüsü, endüstri standartlarına uygun olarak titizlikle tasarlanmıştır:
+1. **Veri Hazırlama ve Temizleme (Python & Excel):** Ham arıza logları ve saha telemetrisi; eksik verilerin işlenmesi, zaman damgalarının standardize edilmesi ve kategorik alanların normalleştirilmesi için Python (`pandas`) ve Excel kullanılarak işlenmiştir.
+2. **ETL ve Dönüştürme (Power Query):** Temizlenen veriler, gelişmiş veri dönüşümleri, koçan sütun oluşturma ve operasyonel hiyerarşilerin haritalandırılması için Power Query'ye aktarılmıştır.
+3. **Veri Modelleme (Yıldız Şema - Star Schema):** Sorgu performansını ve ilişkisel bütünlüğü maksimize etmek amacıyla; olgu tablolarını (arıza olayları, süreler ve etkilenen abone sayıları) boyut tablolarından (operasyon merkezleri, gerilim seviyeleri ve bakım durumu) ayıran sağlam bir Yıldız Şema mimarisi kurulmuştur.
+4. **İleri Düzey Analitik ve DAX:** Dinamik karşılaştırmalara olanak tanımak için gelişmiş DAX formülleri (bakım öncesi/sonrası varyans, yüzde değişim ve birleştirilmiş KPI hesaplamaları) geliştirilmiştir.
+5. **İnteraktif Görselleştirme (Power BI):** Temiz kart görünümleri, çift eksenli trend çizgileri, dağılım pastaları ve senkronize bölgesel filtrelerle yönetici seviyesinde raporlar tasarlanmıştır.
+
+### 🎯 Çözülen Temel İş Soruları
+* **Koruyucu bakımların ölçülebilir yatırım getirisi (ROI) nedir?** Planlı müdahalelerin tekrarlayan arıza sıklıklarını ne ölçüde bastırdığı ve onarım sürelerini kısalttığı analiz edilmiştir.
+* **Saha operasyonları ve sermaye tahsisi nereye odaklanmalıdır?** Müşteri mağduriyetlerinin büyük kısmını tetikleyen kritik operasyon merkezleri ve gerilim kademeleri izole edilmiştir.
+* **Orta Gerilim (OG) ve Alçak Gerilim (AG) olayları ölçek olarak nasıl ayrışır?** Ana hat omurga kararlılığı ile yerel dağıtım darboğazları kıyaslanmıştır.
 
 > **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI Şablon (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
 
@@ -157,7 +176,7 @@ Elektrik şebekesi güvenilirliği, enerji kesintilerinin en aza indirilmesi ve 
 > 💡 *Analitik Bulgu:* Bölgesel operasyon merkezlerinde toplam kesinti sürelerinde tutarlı bir şekilde %25 ila %45 daralma olduğunu kantitatif olarak kanıtlayarak, bakım optimizasyonunun doğrudan minimum kesinti süresine (downtime) ve gelişmiş hizmet sürekliliğine dönüştüğünü gösterir.
 
 ### 🛠️ Kullanılan Araçlar ve Teknikler
-*   **İş Zekası (BI):** Power BI
-*   **Veri Hazırlama ve İşleme:** Python, Excel, Power Query
-*   **Veri Modelleme:** Yıldız Şema (Star Schema)
-*   **Diller:** Python, DAX
+*   **İş Zekası (BI):** Power BI (DAX, İnteraktif Dilimleyiciler, Özel Araç İpuçları)
+*   **Veri Mühendisliği ve ETL:** Python (`pandas`), Excel, Power Query
+*   **Veri Modelleme:** Yıldız Şema Mimarisi (Olgu ve Boyut Tabloları)
+*   **Diller:** Python, DAX (Data Analysis Expressions)
