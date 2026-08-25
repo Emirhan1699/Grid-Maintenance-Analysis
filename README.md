@@ -24,8 +24,8 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **4. LV vs. MV Frequency Comparison (AG ve OG Kesinti Sayısı Karşılaştırması)**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="60%" title="AG (Alçak Gerilim) Görünümü" />
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="60%" title="OG (Orta Gerilim) Görünümü" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="75%" title="AG (Alçak Gerilim) Görünümü" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="75%" title="OG (Orta Gerilim) Görünümü" />
 </p>
 
 ### 🎯 Key Metrics & Visualizations
