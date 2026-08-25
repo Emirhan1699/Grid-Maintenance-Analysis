@@ -3,38 +3,38 @@
 
 This project was developed to analyze the impact of grid maintenance operations on power outages. The dashboard provides analytical insights into how maintenance activities influence both the frequency and duration of outages across different operational centers.
 
-> **🔒 Data Privacy Notice:** Due to strict company confidentiality, all original datasets and the Power BI (`.pbit`) file have been permanently excluded. This repository showcases the project design, visual structures, and analytical insights exclusively through documentation and screenshots.
+> **🔒 Data Privacy Notice:** Due to strict company confidentiality, all original datasets and the Power BI Template (`.pbit`) file have been permanently excluded. This repository showcases the project design, visual structures, and analytical insights exclusively through documentation and screenshots.
 
-### 📊 Dashboard Views & Analytical Insights (Dashboard Görünümleri ve Bulgular)
+### 📊 Dashboard Views & Analytical Insights
 
-**1. Overall Outage Frequency Impact (Genel Kesinti Sayısı Etkisi)**
+**1. Overall Outage Frequency Impact**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Genel Kesinti Sayısı" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Overall Outage Frequency Impact" />
 </p>
 > 💡 *Key Insight:* Tracks the fluctuation in total outage incidents before and after interventions, highlighting how targeted maintenance operations help mitigate recurring faults and stabilize network performance.
 
 <br><br>
 
-**2. Outage Source Distribution (Kaynak Dağılımı)**
+**2. Outage Source Distribution**
 <p align="center">
-  <img src="Kaynak Dağılımı.png" width="45%" title="Kaynak Dağılımı" />
+  <img src="Kaynak Dağılımı.png" width="45%" title="Outage Source Distribution" />
 </p>
 > 💡 *Key Insight:* Demonstrates that the vast majority of recorded outages originate from Low Voltage (AG) lines (86.86%), while Medium Voltage (OG) accounts for 13.14%, providing a clear strategic roadmap for field team resource allocation.
 
 <br><br>
 
-**3. LV vs. MV Frequency Comparison (AG ve OG Kesinti Sayısı Karşılaştırması)**
+**3. LV vs. MV Frequency Comparison**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="AG (Alçak Gerilim) Görünümü" />
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="Orta Gerilim) Görünümü" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="49%" title="Low Voltage View" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="49%" title="Medium Voltage View" />
 </p>
 > 💡 *Key Insight:* Offers a granular comparative breakdown of maintenance efficiency separated by grid types (AG vs. MV), allowing managers to evaluate localized grid performance across different operational regions.
 
 <br><br>
 
-**4. Overall Outage Duration Impact (Genel Kesinti Süresi Etkisi)**
+**4. Overall Outage Duration Impact**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Genel Kesinti Süresi" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
 > 💡 *Key Insight:* Post-maintenance analysis reveals a consistent reduction in total outage durations across nearly all operational centers (mostly ranging between 25% and 45%). This proves the tangible positive impact of preventive maintenance on minimizing grid downtime.
 
@@ -55,7 +55,7 @@ The dashboard focuses on translating raw grid data into actionable business inte
 
 Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkisini analiz etmek amacıyla geliştirilmiştir. Hazırlanan dashboard, bakım operasyonlarının farklı operasyon merkezlerindeki kesinti sıklığını ve süresini nasıl etkilediğine dair analitik içgörüler sunar.
 
-> **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
+> **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI Şablon (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
 
 ### 🎯 Öne Çıkan Metrikler ve Bulgular
 Dashboard, ham şebeke verilerini eyleme dönüştürülebilir iş zekasına (BI) çevirmek için şu temel görsellere ve bulgulara odaklanır:
