@@ -17,7 +17,12 @@ This project was developed to analyze the impact of grid maintenance operations 
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Genel Kesinti Sayısı" />
 </p>
 
-**3. LV vs. MV Frequency Comparison (AG ve OG Kesinti Sayısı Karşılaştırması)**
+**3. Outage Source Distribution (Kaynak Dağılımı)**
+<p align="center">
+  <img src="Kaynak Dağılımı.png" width="85%" title="Kaynak Dağılımı" />
+</p>
+
+**4. LV vs. MV Frequency Comparison (AG ve OG Kesinti Sayısı Karşılaştırması)**
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="49%" title="AG (Alçak Gerilim) Görünümü" />
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="49%" title="OG (Orta Gerilim) Görünümü" />
