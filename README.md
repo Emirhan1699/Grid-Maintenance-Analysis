@@ -13,7 +13,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 </p>
 > 💡 *Key Insight:* Tracks the fluctuation in total outage incidents before and after interventions, highlighting how targeted maintenance operations help mitigate recurring faults and stabilize network performance.
 
-<br>
+<br><br>
 
 **2. Outage Source Distribution (Kaynak Dağılımı)**
 <p align="center">
@@ -21,7 +21,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 </p>
 > 💡 *Key Insight:* Demonstrates that the vast majority of recorded outages originate from Low Voltage (AG) lines (86.86%), while Medium Voltage (OG) accounts for 13.14%, providing a clear strategic roadmap for field team resource allocation.
 
-<br>
+<br><br>
 
 **3. LV vs. MV Frequency Comparison (AG ve OG Kesinti Sayısı Karşılaştırması)**
 <p align="center">
@@ -30,7 +30,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 </p>
 > 💡 *Key Insight:* Offers a granular comparative breakdown of maintenance efficiency separated by grid types (AG vs. MV), allowing managers to evaluate localized grid performance across different operational regions.
 
-<br>
+<br><br>
 
 **4. Overall Outage Duration Impact (Genel Kesinti Süresi Etkisi)**
 <p align="center">
