@@ -2,7 +2,7 @@
 *🇹🇷 Türkçe versiyon için [aşağıya kaydırın](#türkçe-versiyon)*
 
 ## 📌 Project Overview
-Electrical grid reliability is critical for minimizing service disruptions and ensuring continuous energy delivery. This project was developed to evaluate the quantitative impact of scheduled grid maintenance operations on power outages across various regional operational centers. By transforming raw grid telemetry and maintenance logs (handling large-scale datasets exceeding 623,000 outage records and 11,000 maintenance logs) into actionable business intelligence, the dashboard provides deep analytical visibility into how proactive interventions influence fault frequencies, customer disruptions, and total outage durations.
+Electrical grid reliability is critical for minimizing service disruptions and ensuring continuous energy delivery. This project was developed to evaluate the quantitative impact of scheduled grid maintenance operations on power outages across various regional operational centers. By transforming raw enterprise grid telemetry and maintenance logs into actionable business intelligence, the dashboard provides deep analytical visibility into how proactive interventions influence fault frequencies, customer disruptions, and total outage durations.
 
 ### 🏗️ Project Architecture & Workflow
 The end-to-end data lifecycle of this project was meticulously designed following industry best practices:
@@ -83,6 +83,13 @@ The end-to-end data lifecycle of this project was meticulously designed followin
 </p>
 > 💡 *Key Insight:* Quantifies a consistent 25% to 45% contraction in total outage durations across regional operational centers, proving that maintenance optimization directly translates to minimized downtime and maximized service continuity.
 
+### 🎯 Key Metrics & Visualizations
+The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
+*   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
+*   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
+*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers, highlighting the critical 97.11% MV vs. 2.89% LV customer exposure distribution.
+*   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
+
 ### 🛠️ Tools & Techniques
 *   **Business Intelligence:** Power BI (DAX, Interactive Slicers, Custom Tooltips)
 *   **Data Engineering & ETL:** Python (`pandas`, `numpy`), Excel, Power Query
@@ -94,7 +101,7 @@ The end-to-end data lifecycle of this project was meticulously designed followin
 <h2 id="türkçe-versiyon">⚡ Şebeke Bakım ve Kesinti Etki Analizi</h2>
 
 ## 📌 Proje Özeti
-Elektrik şebekesi güvenilirliği, enerji kesintilerinin en aza indirilmesi ve kesintisiz enerji arzının sağlanması açısından hayati önem taşır. Bu proje, planlı şebeke bakım operasyonlarının farklı bölgesel operasyon merkezlerindeki güç kesintileri üzerindeki kantitatif etkisini değerlendirmek amacıyla geliştirilmiştir. 623 binden fazla arıza kaydı ve 11 bini aşkın bakım logunu içeren büyük ölçekli ham şebeke verileri iş zekasına dönüştürülerek; proaktif müdahalelerin arıza sıklıklarını, müşteri mağduriyetlerini ve toplam kesinti sürelerini nasıl optimize ettiğine dair derinlemesine analitik içgörüler sunulmuştur.
+Elektrik şebekesi güvenilirliği, enerji kesintilerinin en aza indirilmesi ve kesintisiz enerji arzının sağlanması açısından hayati önem taşır. Bu proje, planlı şebeke bakım operasyonlarının farklı bölgesel operasyon merkezlerindeki güç kesintileri üzerindeki kantitatif etkisini değerlendirmek amacıyla geliştirilmiştir. Yüz binlerce arıza kaydı ve bakım logunu içeren büyük ölçekli kurumsal şebeke verileri iş zekasına dönüştürülerek; proaktif müdahalelerin arıza sıklıklarını, müşteri mağduriyetlerini ve toplam kesinti sürelerini nasıl optimize ettiğine dair derinlemesine analitik içgörüler sunulmuştur.
 
 ### 🏗️ Proje Mimarisi ve İş Akışı
 Bu projenin uçtan uca veri yaşam döngüsü, endüstri standartlarına uygun olarak titizlikle tasarlanmıştır:
