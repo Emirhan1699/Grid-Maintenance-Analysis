@@ -46,40 +46,86 @@ The end-to-end data workflow was designed to combine data preparation, transform
 
 ### 1. Overall Outage Frequency Impact
 
+<p align="center">
+  <img src="outage_count_impact.png" width="85%" title="Overall Outage Frequency Impact" />
+</p>
+
 > 💡 **Key Insight:**  
 > The analysis shows a measurable decrease in outage frequency following maintenance interventions, indicating an improvement in network reliability after scheduled maintenance activities.
 
+<br><br>
+
 ### 2. Outage Source Distribution
+
+<p align="center">
+  <img src="source_distribution.png" width="45%" title="Outage Source Distribution" />
+</p>
 
 > 💡 **Key Insight:**  
 > Medium Voltage (MV) lines account for **86.86%** of the analyzed outage distribution. This highlights the importance of prioritizing MV feeder maintenance and operational planning when addressing the largest share of outage activity.
 
+<br><br>
+
 ### 3. Low Voltage (LV) Outage Frequency Analysis
+
+<p align="center">
+  <img src="lv_outage_analysis.png" width="85%" title="Low Voltage View" />
+</p>
 
 > 💡 **Key Insight:**  
 > Provides granular visibility into Low Voltage network performance, allowing localized outage patterns and distribution-level issues to be examined across operational centers.
 
+<br><br>
+
 ### 4. Medium Voltage (MV) Outage Frequency Analysis
+
+<p align="center">
+  <img src="mv_outage_analysis.png" width="85%" title="Medium Voltage View" />
+</p>
 
 > 💡 **Key Insight:**  
 > Evaluates Medium Voltage feeder performance and highlights how maintenance activities on critical feeders can contribute to reducing outage frequency across the network.
 
+<br><br>
+
 ### 5. Overall Affected Customers Impact
+
+<p align="center">
+  <img src="affected_customers_impact.png" width="85%" title="Overall Affected Customers Impact" />
+</p>
 
 > 💡 **Key Insight:**  
 > The analysis shows a significant reduction in affected customers following maintenance activities across operational centers. Medium Voltage (MV) outages account for **97.11%** of the analyzed customer impact, while Low Voltage (LV) outages account for **2.89%**.
 
+<br><br>
+
 ### 6. Low Voltage (LV) Affected Customers Analysis
+
+<p align="center">
+  <img src="lv_affected_customers.png" width="85%" title="Low Voltage Affected Customers" />
+</p>
 
 > 💡 **Key Insight:**  
 > Examines localized customer impact within Low Voltage networks, which represent **2.89%** of the analyzed customer exposure, providing additional visibility into distribution-level issues.
 
+<br><br>
+
 ### 7. Medium Voltage (MV) Affected Customers Analysis
+
+<p align="center">
+  <img src="mv_affected_customers.png" width="85%" title="Medium Voltage Affected Customers" />
+</p>
 
 > 💡 **Key Insight:**  
 > Focuses on the Medium Voltage network, which represents **97.11%** of the analyzed affected-customer impact. This highlights the importance of MV feeder maintenance when minimizing widespread customer interruptions.
 
+<br><br>
+
 ### 8. Overall Outage Duration Impact
+
+<p align="center">
+  <img src="outage_duration_impact.png" width="85%" title="Overall Outage Duration Impact" />
+</p>
 
 > 💡 **Key Insight:**  
 > The analysis indicates a consistent **25% to 45% reduction in total outage duration** across the analyzed operational centers following maintenance activities.
@@ -127,9 +173,9 @@ Ham şebeke kesinti ve bakım verileri iş zekasına dönüştürülerek; bakım
 Projenin uçtan uca veri işleme süreci; veri hazırlama, dönüştürme, modelleme, analiz ve görselleştirme aşamalarından oluşturulmuştur:
 
 1. **Veri Hazırlama ve Temizleme (Python & Excel):**  
-   Ham kesinti ve bakım kayıtları Python (`pandas`, `numpy`) ve Excel kullanılarak temizlenmiş ve yapılandırılmıştır. Eksik verilerin işlenmesi, zaman bilgilerinin standardize edilmesi ve kategorik alanların düzenlenmesi bu aşamada gerçekleştirilmiştir.
+   Ham kesinti ve bakım kayıtları Python (`pandas`, `numpy`) and Excel kullanılarak temizlenmiş ve yapılandırılmıştır. Eksik verilerin işlenmesi, zaman bilgilerinin standardize edilmesi ve kategorik alanların düzenlenmesi bu aşamada gerçekleştirilmiştir.
 
-2. **ETL ve Dönüştürme (Power Query):**  
+2. **ETL و Dönüştürme (Power Query):**  
    Hazırlanan veriler Power Query'ye aktarılmış; veri dönüşümleri, koşullu sütun oluşturma, standardizasyon ve operasyonel eşleştirmeler gerçekleştirilmiştir.
 
 3. **Veri Modelleme (Yıldız Şema - Star Schema):**  
@@ -160,40 +206,86 @@ Projenin uçtan uca veri işleme süreci; veri hazırlama, dönüştürme, model
 
 ### 1. Genel Kesinti Sayısı Etkisi
 
+<p align="center">
+  <img src="outage_count_impact.png" width="85%" title="Genel Kesinti Sayısı" />
+</p>
+
 > 💡 **Analitik Bulgu:**  
 > Bakım müdahaleleri sonrasında kesinti sıklığında ölçülebilir bir düşüş gözlemlenmiştir. Bu durum, planlı bakım faaliyetleri sonrasında şebeke güvenilirliğinde iyileşme olduğunu göstermektedir.
 
+<br><br>
+
 ### 2. Kesinti Kaynaklarının Dağılımı
+
+<p align="center">
+  <img src="source_distribution.png" width="45%" title="Kaynak Dağılımı" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Analiz edilen kesintilerin **%86,86'sı Orta Gerilim (OG)** seviyesindeki hatlarla ilişkilidir. Bu sonuç, kesinti aktivitesinin büyük bölümünü oluşturan OG fiderlerinin bakım ve operasyon planlamasında önemli bir yere sahip olduğunu göstermektedir.
 
+<br><br>
+
 ### 3. Alçak Gerilim (AG) Kesinti Analizi
+
+<p align="center">
+  <img src="lv_outage_analysis.png" width="85%" title="AG Görünümü" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Alçak Gerilim şebeke performansına daha ayrıntılı bir bakış sağlayarak, operasyon merkezleri arasındaki yerel kesinti örüntülerinin ve dağıtım seviyesindeki problemlerin incelenmesine olanak tanır.
 
+<br><br>
+
 ### 4. Orta Gerilim (OG) Kesinti Analizi
+
+<p align="center">
+  <img src="mv_outage_analysis.png" width="85%" title="OG Görünümü" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Orta Gerilim fiderlerinin performansını değerlendirerek, kritik fiderlerde gerçekleştirilen bakım faaliyetlerinin kesinti sıklığının azaltılmasına nasıl katkı sağlayabileceğini ortaya koyar.
 
+<br><br>
+
 ### 5. Genel Etkilenen Müşteri Sayısı Etkisi
+
+<p align="center">
+  <img src="affected_customers_impact.png" width="85%" title="Genel Etkilenen Müşteri Sayısı" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Bakım faaliyetleri sonrasında operasyon merkezlerinde etkilenen müşteri sayısında belirgin bir düşüş gözlemlenmiştir. Analiz edilen müşteri etkisinin **%97,11'i Orta Gerilim (OG)**, **%2,89'u ise Alçak Gerilim (AG)** kesintileriyle ilişkilidir.
 
+<br><br>
+
 ### 6. Alçak Gerilim (AG) Etkilenen Müşteri Analizi
+
+<p align="center">
+  <img src="lv_affected_customers.png" width="85%" title="AG Etkilenen Müşteriler" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Analiz edilen toplam müşteri etkisinin **%2,89'unu** oluşturan Alçak Gerilim şebekesindeki lokal müşteri etkilerini inceler ve dağıtım seviyesindeki problemlere daha ayrıntılı bir bakış sağlar.
 
+<br><br>
+
 ### 7. Orta Gerilim (OG) Etkilenen Müşteri Analizi
+
+<p align="center">
+  <img src="mv_affected_customers.png" width="85%" title="OG Etkilenen Müşteriler" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Analiz edilen etkilenen müşteri etkisinin **%97,11'ini** oluşturan Orta Gerilim şebekesine odaklanarak, OG fiderlerinin bakım ve operasyon planlamasındaki önemini ortaya koyar.
 
+<br><br>
+
 ### 8. Genel Kesinti Süresi Etkisi
+
+<p align="center">
+  <img src="outage_duration_impact.png" width="85%" title="Genel Kesinti Süresi" />
+</p>
 
 > 💡 **Analitik Bulgu:**  
 > Analiz edilen operasyon merkezlerinde bakım faaliyetleri sonrasında toplam kesinti sürelerinde **%25 ila %45 arasında azalma** gözlemlenmiştir.
@@ -204,7 +296,7 @@ Projenin uçtan uca veri işleme süreci; veri hazırlama, dönüştürme, model
 
 Bu uçtan uca analitik çözüm, ham şebeke bakım ve kesinti verilerinin operasyonel karar alma süreçlerinde kullanılabilecek anlamlı içgörülere dönüştürülebileceğini göstermektedir.
 
-Projeden elde edilen temel çıkarımlar:
+Projeldan elde edilen temel çıkarımlar:
 
 - **Bakım Etkisi:**  
   Planlı bakım faaliyetleri sonrasında kesinti sıklığı ve toplam kesinti süresinde azalma gözlemlenmiştir. Analiz edilen operasyon merkezlerinde toplam kesinti süresinde **%25 ila %45 arasında azalma** görülmüştür.
