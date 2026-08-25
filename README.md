@@ -19,7 +19,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="Kaynak Dağılımı.png" width="45%" title="Outage Source Distribution" />
 </p>
-> 💡 *Key Insight:* Demonstrates that the vast majority of recorded outages originate from Low Voltage (AG) lines (86.86%), while Medium Voltage (OG) accounts for 13.14%, providing a clear strategic roadmap for field team resource allocation.
+> 💡 *Key Insight:* Demonstrates that the vast majority of recorded outages originate from Medium Voltage (MV) lines (86.86%), while Low Voltage (LV) accounts for 13.14%, providing a clear strategic roadmap for field team resource allocation.
 
 <br><br>
 
@@ -78,7 +78,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="Kaynak Dağılımı.png" width="45%" title="Kaynak Dağılımı" />
 </p>
-> 💡 *Analitik Bulgu:* Kesintilerin oransal olarak büyük kısmının Alçak Gerilim (%86,86), daha küçük kısmının ise Orta Gerilim (%13,14) hatlarından kaynaklandığını göstererek saha ekiplerine stratejik yönelim sağlar.
+> 💡 *Analitik Bulgu:* Kesintilerin oransal olarak büyük kısmının Orta Gerilim (%86,86), daha küçük kısmının ise Alçak Gerilim (%13,14) hatlarından kaynaklandığını göstererek saha ekiplerine stratejik yönelim sağlar.
 
 <br><br>
 
