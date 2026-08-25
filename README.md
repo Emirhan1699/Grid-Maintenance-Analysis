@@ -6,7 +6,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 > **🔒 Data Privacy Notice:** Due to company confidentiality, all original datasets have been permanently removed. This repository only contains the Power BI Template (`.pbit`) file, demonstrating the data modeling, DAX measures, and dashboard design.
 
 ### 📊 Dashboard Preview
-![Dashboard Preview](Kesinti_Sayısı_Degisimi_2.gif)
+![Dashboard Preview](Kesinti%20Sayısı%20Degisimi.gif)
 
 ### 🎯 Key Metrics & Visualizations
 The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
