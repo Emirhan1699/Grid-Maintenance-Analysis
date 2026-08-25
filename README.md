@@ -11,7 +11,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Overall Outage Frequency Impact" />
 </p>
-> 💡 *Key Insight:* Tracks the fluctuation in total outage incidents before and after interventions, highlighting how targeted maintenance operations help mitigate recurring faults and stabilize network performance.
+> 💡 *Key Insight:* Demonstrates a measurable decrease in fault frequency post-intervention, validating the effectiveness of scheduled preventive maintenance in suppressing recurring grid anomalies and enhancing overall network resilience.
 
 <br><br>
 
@@ -19,7 +19,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="Kaynak Dağılımı.png" width="45%" title="Outage Source Distribution" />
 </p>
-> 💡 *Key Insight:* Demonstrates that the vast majority of recorded outages originate from Medium Voltage (MV) lines (86.86%), while Low Voltage (LV) accounts for 13.14%, providing a clear strategic roadmap for field team resource allocation.
+> 💡 *Key Insight:* Highlights that Medium Voltage (MV) lines account for the vast majority of outage distribution (86.86%), indicating that capital allocation and predictive maintenance strategies must prioritize high-voltage feeder networks to maximize ROI on field operations.
 
 <br><br>
 
@@ -27,7 +27,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="Low Voltage View" />
 </p>
-> 💡 *Key Insight:* Granular evaluation of Low Voltage lines, showing pre- and post-maintenance performance trends across regional operational centers.
+> 💡 *Key Insight:* Provides granular, localized visibility into Low Voltage network performance, mapping regional response efficiencies and helping operations centers isolate low-tier distribution bottlenecks.
 
 <br><br>
 
@@ -35,7 +35,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="Medium Voltage View" />
 </p>
-> 💡 *Key Insight:* Focuses on Medium Voltage infrastructure changes, providing deep-dive metrics on critical grid line stability following maintenance actions.
+> 💡 *Key Insight:* Evaluates trunk-line stability for Medium Voltage infrastructure, illustrating how targeted interventions on critical feeders successfully mitigate widespread outages and protect downstream assets.
 
 <br><br>
 
@@ -43,7 +43,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
-> 💡 *Key Insight:* Post-maintenance analysis reveals a consistent reduction in total outage durations across nearly all operational centers (mostly ranging between 25% and 45%). This proves the tangible positive impact of preventive maintenance on minimizing grid downtime.
+> 💡 *Key Insight:* Quantifies a consistent 25% to 45% contraction in total outage durations across regional operational centers, proving that maintenance optimization directly translates to minimized downtime and maximized service continuity.
 
 ### 🎯 Key Metrics & Visualizations
 The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
@@ -71,7 +71,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Genel Kesinti Sayısı" />
 </p>
-> 💡 *Analitik Bulgu:* Müdahaleler öncesi ve sonrası kesinti sıklıklarını takip ederek, tekrarlayan arızaların önlenmesindeki operasyonel başarıyı raporlar.
+> 💡 *Analitik Bulgu:* Müdahaleler sonrasında arıza sıklığında ölçülebilir bir düşüş olduğunu göstererek, planlı koruyucu bakımların tekrarlayan şebeke anomalilerini bastırmadaki ve şebeke direncini (resilience) artırmadaki etkinliğini doğrular.
 
 <br><br>
 
@@ -79,7 +79,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="Kaynak Dağılımı.png" width="45%" title="Kaynak Dağılımı" />
 </p>
-> 💡 *Analitik Bulgu:* Kesintilerin oransal olarak büyük kısmının Orta Gerilim (%86,86), daha küçük kısmının ise Alçak Gerilim (%13,14) hatlarından kaynaklandığını göstererek saha ekiplerine stratejik yönelim sağlar.
+> 💡 *Analitik Bulgu:* Kesintilerin çok büyük bir kısmının (%86,86) Orta Gerilim (OG) hatlarından kaynaklandığını ortaya koyarak; saha operasyonlarında yatırım getirisini (ROI) maksimize etmek için sermaye tahsisi ve kestirimci bakım stratejilerinin ana besleme hatlarına odaklanması gerektiğini vurgular.
 
 <br><br>
 
@@ -87,7 +87,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="AG Görünümü" />
 </p>
-> 💡 *Analitik Bulgu:* Alçak gerilim hatlarındaki bakım verimliliğinin bölgesel operasyon merkezlerine göre değişimini detaylı olarak inceler.
+> 💡 *Analitik Bulgu:* Alçak gerilim şebeke performansına bölgesel ve ayrıntılı bir vizyon kazandırarak, operasyon merkezlerinin uç nokta dağıtım darboğazlarını izole etmesine ve yerel müdahale etkinliğini haritalandırmasına olanak tanır.
 
 <br><br>
 
@@ -95,7 +95,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="OG Görünümü" />
 </p>
-> 💡 *Analitik Bulgu:* Kritik orta gerilim şebeke hatlarında gerçekleştirilen bakım faaliyetlerinin arıza trendleri üzerindeki etkisini ortaya koyar.
+> 💡 *Analitik Bulgu:* Kritik orta gerilim altyapısı için ana hat kararlılığını değerlendirerek, kritik besleyiciler üzerinde yapılan hedefli müdahalelerin yaygın kesintileri nasıl başarıyla önlediğini ve alt şebeke varlıklarını koruduğunu gösterir.
 
 <br><br>
 
@@ -103,9 +103,9 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Genel Kesinti Süresi" />
 </p>
-> 💡 *Analitik Bulgu:* Bakım çalışmaları sonrasında neredeyse tüm operasyon merkezlerinde kesinti sürelerinde belirgin bir düşüş (%25 ila %45 arası) olduğu gözlemlenmiştir. Bu durum, planlı bakımın arıza sürelerini kısaltmadaki başarısını kanıtlar.
+> 💡 *Analitik Bulgu:* Bölgesel operasyon merkezlerinde toplam kesinti sürelerinde tutarlı bir şekilde %25 ila %45 daralma olduğunu kantitatif olarak kanıtlayarak, bakım optimizasyonunun doğrudan minimum kesinti süresine (downtime) ve gelişmiş hizmet sürekliliğine dönüştüğünü gösterir.
 
-### 🛠️ Kullanılan Araçlar ve Teknikler
+### 🛠️ Kullanılan Araçlar dan Teknikler
 *   **İş Zekası (BI):** Power BI
 *   **Veri Hazırlama ve İşleme:** Python, Excel, Power Query
 *   **Veri Modelleme:** Yıldız Şema (Star Schema)
