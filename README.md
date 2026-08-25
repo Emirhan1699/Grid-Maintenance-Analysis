@@ -9,7 +9,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **1. Overall Outage Frequency Impact**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Overall Outage Frequency Impact" />
+  <img src="outage_count_impact.png" width="85%" title="Overall Outage Frequency Impact" />
 </p>
 > 💡 *Key Insight:* Demonstrates a measurable decrease in fault frequency post-intervention, validating the effectiveness of scheduled preventive maintenance in suppressing recurring grid anomalies and enhancing overall network resilience.
 
@@ -17,7 +17,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **2. Outage Source Distribution**
 <p align="center">
-  <img src="Kaynak Dağılımı.png" width="45%" title="Outage Source Distribution" />
+  <img src="source_distribution.png" width="45%" title="Outage Source Distribution" />
 </p>
 > 💡 *Key Insight:* Highlights that Medium Voltage (MV) lines account for the vast majority of outage distribution (86.86%), indicating that capital allocation and predictive maintenance strategies must prioritize high-voltage feeder networks to maximize ROI on field operations.
 
@@ -25,7 +25,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **3. Low Voltage (LV) Outage Frequency Analysis**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="Low Voltage View" />
+  <img src="lv_outage_analysis.png" width="85%" title="Low Voltage View" />
 </p>
 > 💡 *Key Insight:* Provides granular, localized visibility into Low Voltage network performance, mapping regional response efficiencies and helping operations centers isolate low-tier distribution bottlenecks.
 
@@ -33,7 +33,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **4. Medium Voltage (MV) Outage Frequency Analysis**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="Medium Voltage View" />
+  <img src="mv_outage_analysis.png" width="85%" title="Medium Voltage View" />
 </p>
 > 💡 *Key Insight:* Evaluates trunk-line stability for Medium Voltage infrastructure, illustrating how targeted interventions on critical feeders successfully mitigate widespread outages and protect downstream assets.
 
@@ -41,7 +41,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **5. Overall Outage Duration Impact**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Overall Outage Duration Impact" />
+  <img src="outage_duration_impact.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
 > 💡 *Key Insight:* Quantifies a consistent 25% to 45% contraction in total outage durations across regional operational centers, proving that maintenance optimization directly translates to minimized downtime and maximized service continuity.
 
@@ -69,7 +69,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 **1. Genel Kesinti Sayısı Etkisi**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Genel Kesinti Sayısı" />
+  <img src="outage_count_impact.png" width="85%" title="Genel Kesinti Sayısı" />
 </p>
 > 💡 *Analitik Bulgu:* Müdahaleler sonrasında arıza sıklığında ölçülebilir bir düşüş olduğunu göstererek, planlı koruyucu bakımların tekrarlayan şebeke anomalilerini bastırmadaki ve şebeke direncini (resilience) artırmadaki etkinliğini doğrular.
 
@@ -77,7 +77,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 **2. Kaynak Dağılımı**
 <p align="center">
-  <img src="Kaynak Dağılımı.png" width="45%" title="Kaynak Dağılımı" />
+  <img src="source_distribution.png" width="45%" title="Kaynak Dağılımı" />
 </p>
 > 💡 *Analitik Bulgu:* Kesintilerin çok büyük bir kısmının (%86,86) Orta Gerilim (OG) hatlarından kaynaklandığını ortaya koyarak; saha operasyonlarında yatırım getirisini (ROI) maksimize etmek için sermaye tahsisi ve kestirimci bakım stratejilerinin ana besleme hatlarına odaklanması gerektiğini vurgular.
 
@@ -85,7 +85,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 **3. Alçak Gerilim (AG) Kesinti Analizi**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="AG Görünümü" />
+  <img src="lv_outage_analysis.png" width="85%" title="AG Görünümü" />
 </p>
 > 💡 *Analitik Bulgu:* Alçak gerilim şebeke performansına bölgesel ve ayrıntılı bir vizyon kazandırarak, operasyon merkezlerinin uç nokta dağıtım darboğazlarını izole etmesine ve yerel müdahale etkinliğini haritalandırmasına olanak tanır.
 
@@ -93,7 +93,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 **4. Orta Gerilim (OG) Kesinti Analizi**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="OG Görünümü" />
+  <img src="mv_outage_analysis.png" width="85%" title="OG Görünümü" />
 </p>
 > 💡 *Analitik Bulgu:* Kritik orta gerilim altyapısı için ana hat kararlılığını değerlendirerek, kritik besleyiciler üzerinde yapılan hedefli müdahalelerin yaygın kesintileri nasıl başarıyla önlediğini ve alt şebeke varlıklarını koruduğunu gösterir.
 
@@ -101,12 +101,12 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 **5. Genel Kesinti Süresi Etkisi**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Genel Kesinti Süresi" />
+  <img src="outage_duration_impact.png" width="85%" title="Genel Kesinti Süresi" />
 </p>
 > 💡 *Analitik Bulgu:* Bölgesel operasyon merkezlerinde toplam kesinti sürelerinde tutarlı bir şekilde %25 ila %45 daralma olduğunu kantitatif olarak kanıtlayarak, bakım optimizasyonunun doğrudan minimum kesinti süresine (downtime) ve gelişmiş hizmet sürekliliğine dönüştüğünü gösterir.
 
-### 🛠️ Kullanılan Araçlar dan Teknikler
+### 🛠️ Kullanılan Araçlar ve Teknikler
 *   **İş Zekası (BI):** Power BI
 *   **Veri Hazırlama ve İşleme:** Python, Excel, Power Query
-*   **Veri Modelleme:** Yıldız Şema (Star Schema)
+*   **Data Modeling:** Star Schema
 *   **Diller:** Python, DAX
