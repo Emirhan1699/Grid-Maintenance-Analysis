@@ -17,7 +17,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **2. Outage Source Distribution**
 <p align="center">
-  <img src="source_distribution.png" width="30%" title="Outage Source Distribution" />
+  <img src="source_distribution.png" width="35%" title="Outage Source Distribution" />
 </p>
 > 💡 *Key Insight:* Highlights that Medium Voltage (MV) lines account for the vast majority of outage distribution (86.86%), indicating that capital allocation and predictive maintenance strategies must prioritize high-voltage feeder networks to maximize ROI on field operations.
 
