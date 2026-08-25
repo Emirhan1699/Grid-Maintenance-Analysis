@@ -43,7 +43,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="affected_customers_impact.png" width="85%" title="Overall Affected Customers Impact" />
 </p>
-> 💡 *Key Insight:* Measures the substantial reduction in affected customer volume post-maintenance, illustrating how targeted grid interventions successfully minimize large-scale disruptions and elevate end-user service reliability.
+> 💡 *Key Insight:* Quantifies a significant post-maintenance reduction in affected customers across operations centers. Furthermore, the proportional breakdown reveals that Medium Voltage (MV) faults drive 97.11% of customer interruptions, whereas Low Voltage (LV) accounts for 2.89%, proving that high-voltage maintenance is the primary driver for protecting large consumer bases.
 
 <br><br>
 
@@ -51,7 +51,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="lv_affected_customers.png" width="85%" title="Low Voltage Affected Customers" />
 </p>
-> 💡 *Key Insight:* Evaluates customer-centric impacts specifically across Low Voltage distribution lines, tracking how localized maintenance minimizes residential and small-scale commercial disruptions.
+> 💡 *Key Insight:* Evaluates localized customer impact within Low Voltage networks (representing 2.89% of overall customer exposure), demonstrating how targeted tier-2 maintenance effectively minimizes residential and small-scale commercial disruptions.
 
 <br><br>
 
@@ -59,7 +59,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 <p align="center">
   <img src="mv_affected_customers.png" width="85%" title="Medium Voltage Affected Customers" />
 </p>
-> 💡 *Key Insight:* Analyzes the reduction of affected customers on critical Medium Voltage feeder lines, highlighting how high-voltage maintenance protects large consumer groups from widespread outages.
+> 💡 *Key Insight:* Focuses on the heavy-impact Medium Voltage tier (accounting for 97.11% of affected customers), illustrating how feeder-line optimization successfully shields massive consumer groups from widespread blackouts.
 
 <br><br>
 
@@ -73,7 +73,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
 *   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
 *   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
-*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers across overall, LV, and MV tiers.
+*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers, highlighting the critical 97.11% MV vs. 2.89% LV customer exposure distribution.
 *   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
 
 ### 🛠️ Tools & Techniques
@@ -128,7 +128,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="affected_customers_impact.png" width="85%" title="Genel Etkilenen Müşteri Sayısı" />
 </p>
-> 💡 *Analitik Bulgu:* Bakım çalışmaları sonrasında kesintilerden etkilenen müşteri hacmindeki ciddi düşüşü ölçerek, hedefli şebeke müdahalelerinin büyük ölçekli kesintileri nasıl en aza indirdiğini ve son kullanıcı hizmet güvenilirliğini artırdığını ortaya koyar.
+> 💡 *Analitik Bulgu:* Bakım sonrasında operasyon merkezlerindeki etkilenen müşteri sayılarında belirgin bir düşüş olduğunu kantitatif olarak kanıtlar. Ayrıca, kesintilerden etkilenen müşterilerin %97,11'inin Orta Gerilim (OG), %2,89'unun ise Alçak Gerilim (AG) kaynaklı olduğunu göstererek yüksek gerilim bakımlarının kitleler üzerindeki koruyucu etkisini gözler önüne serer.
 
 <br><br>
 
@@ -136,7 +136,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="lv_affected_customers.png" width="85%" title="AG Etkilenen Müşteriler" />
 </p>
-> 💡 *Analitik Bulgu:* Alçak gerilim dağıtım hatlarındaki müşteri odaklı etkileri değerlendirerek, yerel bakımların konut ve küçük ölçekli ticari kesintileri nasıl azalttığını takip eder.
+> 💡 *Analitik Bulgu:* Toplam müşteri maruziyetinin %2,89'unu oluşturan Alçak Gerilim şebekesindeki yerel müşteri etkilerini değerlendirerek, uç nokta bakımlarının konut ve küçük ölçekli ticari kesintileri nasıl azalttığını inceler.
 
 <br><br>
 
@@ -144,7 +144,7 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 <p align="center">
   <img src="mv_affected_customers.png" width="85%" title="OG Etkilenen Müşteriler" />
 </p>
-> 💡 *Analitik Bulgu:* Kritik orta gerilim besleme hatlarında etkilenen müşteri sayısındaki azalışı analiz ederek, yüksek gerilim bakımlarının geniş müşteri kitlelerini yaygın kesintilerden nasıl koruduğunu vurgular.
+> 💡 *Analitik Bulgu:* Etkilenen müşteri kitlesinin %97,11 gibi ezici bir oranını barındıran kritik Orta Gerilim besleme hatlarına odaklanarak, yüksek gerilim optimizasyonunun geniş tüketici gruplarını yaygın kesintilerden korumadaki hayati rolünü vurgular.
 
 <br><br>
 
