@@ -23,16 +23,23 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 <br><br>
 
-**3. LV vs. MV Frequency Comparison**
+**3. Low Voltage (LV) Outage Frequency Analysis**
 <p align="center">
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="49%" title="Low Voltage View" />
-  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="49%" title="Medium Voltage View" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="Low Voltage View" />
 </p>
-> 💡 *Key Insight:* Offers a granular comparative breakdown of maintenance efficiency separated by grid types (AG vs. MV), allowing managers to evaluate localized grid performance across different operational regions.
+> 💡 *Key Insight:* Granular evaluation of Low Voltage lines, showing pre- and post-maintenance performance trends across regional operational centers.
 
 <br><br>
 
-**4. Overall Outage Duration Impact**
+**4. Medium Voltage (MV) Outage Frequency Analysis**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="Medium Voltage View" />
+</p>
+> 💡 *Key Insight:* Focuses on Medium Voltage infrastructure changes, providing deep-dive metrics on critical grid line stability following maintenance actions.
+
+<br><br>
+
+**5. Overall Outage Duration Impact**
 <p align="center">
   <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
@@ -41,7 +48,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 ### 🎯 Key Metrics & Visualizations
 The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
 *   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
-*   **LV vs. MV Breakdown:** A proportional analysis showing the percentage distribution of outages across Low Voltage (AG) and Medium Voltage (OG) lines.
+*   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
 *   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
 
 ### 🛠️ Tools & Techniques
@@ -57,12 +64,45 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 > **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI Şablon (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
 
-### 🎯 Öne Çıkan Metrikler ve Bulgular
-Dashboard, ham şebeke verilerini eyleme dönüştürülebilir iş zekasına (BI) çevirmek için şu temel görsellere ve bulgulara odaklanır:
+### 📊 Dashboard Görünümleri ve Bulgular
 
-*   **Bakım Sonucu Sayı Değişimi:** Müdahaleler öncesi ve sonrası kesinti sıklıklarını takip ederek, tekrarlayan arızaların önlenmesindeki operasyonel başarıyı raporlar.
-*   **AG ve OG Kesinti Dağılımı:** Kesintilerin oransal olarak büyük kısmının Alçak Gerilim (%86,86), daha küçük kısmının ise Orta Gerilim (%13,14) hatlarından kaynaklandığını göstererek saha ekiplerine stratejik yönelim sağlar.
-*   **Bakım Sonucu Süre Değişimi:** Bakım çalışmaları sonrasında neredeyse tüm operasyon merkezlerinde kesinti sürelerinde belirgin bir düşüş (%25 ila %45 arası) olduğu gözlemlenmiştir. Bu durum, planlı bakımın arıza sürelerini kısaltmadaki başarısını kanıtlar.
+**1. Genel Kesinti Sayısı Etkisi**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Genel Kesinti Sayısı" />
+</p>
+> 💡 *Analitik Bulgu:* Müdahaleler öncesi ve sonrası kesinti sıklıklarını takip ederek, tekrarlayan arızaların önlenmesindeki operasyonel başarıyı raporlar.
+
+<br><br>
+
+**2. Kaynak Dağılımı**
+<p align="center">
+  <img src="Kaynak Dağılımı.png" width="45%" title="Kaynak Dağılımı" />
+</p>
+> 💡 *Analitik Bulgu:* Kesintilerin oransal olarak büyük kısmının Alçak Gerilim (%86,86), daha küçük kısmının ise Orta Gerilim (%13,14) hatlarından kaynaklandığını göstererek saha ekiplerine stratejik yönelim sağlar.
+
+<br><br>
+
+**3. Alçak Gerilim (AG) Kesinti Analizi**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="85%" title="AG Görünümü" />
+</p>
+> 💡 *Analitik Bulgu:* Alçak gerilim hatlarındaki bakım verimliliğinin bölgesel operasyon merkezlerine göre değişimini detaylı olarak inceler.
+
+<br><br>
+
+**4. Orta Gerilim (OG) Kesinti Analizi**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="85%" title="OG Görünümü" />
+</p>
+> 💡 *Analitik Bulgu:* Kritik orta gerilim şebeke hatlarında gerçekleştirilen bakım faaliyetlerinin arıza trendleri üzerindeki etkisini ortaya koyar.
+
+<br><br>
+
+**5. Genel Kesinti Süresi Etkisi**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Genel Kesinti Süresi" />
+</p>
+> 💡 *Analitik Bulgu:* Bakım çalışmaları sonrasında neredeyse tüm operasyon merkezlerinde kesinti sürelerinde belirgin bir düşüş (%25 ila %45 arası) olduğu gözlemlenmiştir. Bu durum, planlı bakımın arıza sürelerini kısaltmadaki başarısını kanıtlar.
 
 ### 🛠️ Kullanılan Araçlar ve Teknikler
 *   **İş Zekası (BI):** Power BI
