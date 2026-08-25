@@ -3,7 +3,7 @@
 
 This project was developed to analyze the impact of grid maintenance operations on power outages. The dashboard provides analytical insights into how maintenance activities influence both the frequency and duration of outages across different operational centers.
 
-> **🔒 Data Privacy Notice:** Due to strict company confidentiality, all original datasets and the Power BI (`.pbit`) file have been permanently excluded. This repository showcases the project design, visual structures, and analytical insights exclusively through documentation and screenshots.
+> **🔒 Data Privacy Notice:** Due to strict company confidentiality, all original datasets and the Power BI Template (`.pbit`) file have been permanently excluded. This repository showcases the project design, visual structures, and analytical insights exclusively through documentation and screenshots.
 
 ### 📊 Dashboard Views & Analytical Insights
 
@@ -17,7 +17,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 **2. Outage Source Distribution**
 <p align="center">
-  <img src="source_distribution.png" width="35%" title="Outage Source Distribution" />
+  <img src="source_distribution.png" width="45%" title="Outage Source Distribution" />
 </p>
 > 💡 *Key Insight:* Highlights that Medium Voltage (MV) lines account for the vast majority of outage distribution (86.86%), indicating that capital allocation and predictive maintenance strategies must prioritize high-voltage feeder networks to maximize ROI on field operations.
 
@@ -39,7 +39,31 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 <br><br>
 
-**5. Overall Outage Duration Impact**
+**5. Overall Affected Customers Impact**
+<p align="center">
+  <img src="affected_customers_impact.png" width="85%" title="Overall Affected Customers Impact" />
+</p>
+> 💡 *Key Insight:* Measures the substantial reduction in affected customer volume post-maintenance, illustrating how targeted grid interventions successfully minimize large-scale disruptions and elevate end-user service reliability.
+
+<br><br>
+
+**6. Low Voltage (LV) Affected Customers Analysis**
+<p align="center">
+  <img src="lv_affected_customers.png" width="85%" title="Low Voltage Affected Customers" />
+</p>
+> 💡 *Key Insight:* Evaluates customer-centric impacts specifically across Low Voltage distribution lines, tracking how localized maintenance minimizes residential and small-scale commercial disruptions.
+
+<br><br>
+
+**7. Medium Voltage (MV) Affected Customers Analysis**
+<p align="center">
+  <img src="mv_affected_customers.png" width="85%" title="Medium Voltage Affected Customers" />
+</p>
+> 💡 *Key Insight:* Analyzes the reduction of affected customers on critical Medium Voltage feeder lines, highlighting how high-voltage maintenance protects large consumer groups from widespread outages.
+
+<br><br>
+
+**8. Overall Outage Duration Impact**
 <p align="center">
   <img src="outage_duration_impact.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
@@ -49,6 +73,7 @@ This project was developed to analyze the impact of grid maintenance operations 
 The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
 *   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
 *   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
+*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers across overall, LV, and MV tiers.
 *   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
 
 ### 🛠️ Tools & Techniques
@@ -61,9 +86,9 @@ The dashboard focuses on translating raw grid data into actionable business inte
 
 <h2 id="türkçe-versiyon">⚡ Şebeke Bakım ve Kesinti Etki Analizi</h2>
 
-Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkisini analiz etmek amacıyla geliştirilmiştir. Hazırlanan dashboard, bakım operasyonlarının farklı operasyon merkezlerindeki kesinti sıklığını ve süresini nasıl etkilediğine dair analitik içgörüler sunar.
+Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkisini analiz etmek amacıyla geliştirilmiştir. Hazırlanan dashboard, bakım operasyonlarının farklı operasyon merkezlerindeki kesinti sıklığını, etkilenen müşteri sayısını ve süresini nasıl etkilediğine dair analitik içgörüler sunar.
 
-> **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
+> **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI Şablon (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
 
 ### 📊 Dashboard Görünümleri ve Bulgular
 
@@ -99,7 +124,31 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 <br><br>
 
-**5. Genel Kesinti Süresi Etkisi**
+**5. Genel Etkilenen Müşteri Sayısı Etkisi**
+<p align="center">
+  <img src="affected_customers_impact.png" width="85%" title="Genel Etkilenen Müşteri Sayısı" />
+</p>
+> 💡 *Analitik Bulgu:* Bakım çalışmaları sonrasında kesintilerden etkilenen müşteri hacmindeki ciddi düşüşü ölçerek, hedefli şebeke müdahalelerinin büyük ölçekli kesintileri nasıl en aza indirdiğini ve son kullanıcı hizmet güvenilirliğini artırdığını ortaya koyar.
+
+<br><br>
+
+**6. Alçak Gerilim (AG) Etkilenen Müşteri Analizi**
+<p align="center">
+  <img src="lv_affected_customers.png" width="85%" title="AG Etkilenen Müşteriler" />
+</p>
+> 💡 *Analitik Bulgu:* Alçak gerilim dağıtım hatlarındaki müşteri odaklı etkileri değerlendirerek, yerel bakımların konut ve küçük ölçekli ticari kesintileri nasıl azalttığını takip eder.
+
+<br><br>
+
+**7. Orta Gerilim (OG) Etkilenen Müşteri Analizi**
+<p align="center">
+  <img src="mv_affected_customers.png" width="85%" title="OG Etkilenen Müşteriler" />
+</p>
+> 💡 *Analitik Bulgu:* Kritik orta gerilim besleme hatlarında etkilenen müşteri sayısındaki azalışı analiz ederek, yüksek gerilim bakımlarının geniş müşteri kitlelerini yaygın kesintilerden nasıl koruduğunu vurgular.
+
+<br><br>
+
+**8. Genel Kesinti Süresi Etkisi**
 <p align="center">
   <img src="outage_duration_impact.png" width="85%" title="Genel Kesinti Süresi" />
 </p>
@@ -108,5 +157,5 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 ### 🛠️ Kullanılan Araçlar ve Teknikler
 *   **İş Zekası (BI):** Power BI
 *   **Veri Hazırlama ve İşleme:** Python, Excel, Power Query
-*   **Data Modeling:** Star Schema
+*   **Veri Modelleme:** Yıldız Şema (Star Schema)
 *   **Diller:** Python, DAX
