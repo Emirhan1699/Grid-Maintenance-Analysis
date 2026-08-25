@@ -53,8 +53,9 @@ The dashboard focuses on translating raw grid data into actionable business inte
 
 ### 🛠️ Tools & Techniques
 *   **Business Intelligence:** Power BI
-*   **Data Modeling:** Star Schema, Power Query
-*   **Languages:** DAX (Data Analysis Expressions)
+*   **Data Preparation & Processing:** Python, Excel, Power Query
+*   **Data Modeling:** Star Schema
+*   **Languages:** Python, DAX (Data Analysis Expressions)
 
 ---
 
@@ -106,5 +107,6 @@ Bu proje, şebeke bakım çalışmalarının güç kesintileri üzerindeki etkis
 
 ### 🛠️ Kullanılan Araçlar ve Teknikler
 *   **İş Zekası (BI):** Power BI
-*   **Veri Modelleme:** Yıldız Şema (Star Schema), Power Query
-*   **Diller:** DAX
+*   **Veri Hazırlama ve İşleme:** Python, Excel, Power Query
+*   **Veri Modelleme:** Yıldız Şema (Star Schema)
+*   **Diller:** Python, DAX
