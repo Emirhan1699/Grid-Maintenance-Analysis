@@ -173,9 +173,9 @@ Ham şebeke kesinti ve bakım verileri iş zekasına dönüştürülerek; bakım
 Projenin uçtan uca veri işleme süreci; veri hazırlama, dönüştürme, modelleme, analiz ve görselleştirme aşamalarından oluşturulmuştur:
 
 1. **Veri Hazırlama ve Temizleme (Python & Excel):**  
-   Ham kesinti ve bakım kayıtları Python (`pandas`, `numpy`) and Excel kullanılarak temizlenmiş ve yapılandırılmıştır. Eksik verilerin işlenmesi, zaman bilgilerinin standardize edilmesi ve kategorik alanların düzenlenmesi bu aşamada gerçekleştirilmiştir.
+   Ham kesinti ve bakım kayıtları Python (`pandas`, `numpy`) ve Excel kullanılarak temizlenmiş ve yapılandırılmıştır. Eksik verilerin işlenmesi, zaman bilgilerinin standardize edilmesi ve kategorik alanların düzenlenmesi bu aşamada gerçekleştirilmiştir.
 
-2. **ETL و Dönüştürme (Power Query):**  
+2. **ETL ve Dönüştürme (Power Query):**  
    Hazırlanan veriler Power Query'ye aktarılmış; veri dönüşümleri, koşullu sütun oluşturma, standardizasyon ve operasyonel eşleştirmeler gerçekleştirilmiştir.
 
 3. **Veri Modelleme (Yıldız Şema - Star Schema):**  
@@ -296,7 +296,7 @@ Projenin uçtan uca veri işleme süreci; veri hazırlama, dönüştürme, model
 
 Bu uçtan uca analitik çözüm, ham şebeke bakım ve kesinti verilerinin operasyonel karar alma süreçlerinde kullanılabilecek anlamlı içgörülere dönüştürülebileceğini göstermektedir.
 
-Projeldan elde edilen temel çıkarımlar:
+Projeden elde edilen temel çıkarımlar:
 
 - **Bakım Etkisi:**  
   Planlı bakım faaliyetleri sonrasında kesinti sıklığı ve toplam kesinti süresinde azalma gözlemlenmiştir. Analiz edilen operasyon merkezlerinde toplam kesinti süresinde **%25 ila %45 arasında azalma** görülmüştür.
@@ -311,9 +311,9 @@ Projeldan elde edilen temel çıkarımlar:
 
 ---
 
-## 🛠️ Kullanılan Araçlar ve Teknikler
+## 🛠️ Tools & Techniques
 
-- **İş Zekası:** Power BI, DAX, İnteraktif Dilimleyiciler, Özel Araç İpuçları
-- **Veri Mühendisliği ve ETL:** Python (`pandas`, `numpy`), Excel, Power Query
-- **Veri Modelleme:** Yıldız Şema Mimarisi (Olgu ve Boyut Tabloları)
-- **Programlama ve Analitik:** Python, DAX (Data Analysis Expressions)
+- **Business Intelligence:** Power BI, DAX, Interactive Slicers, Custom Tooltips
+- **Data Engineering & ETL:** Python (`pandas`, `numpy`), Excel, Power Query
+- **Data Modeling:** Star Schema Architecture (Fact & Dimension Tables)
+- **Programming & Analytics:** Python, DAX (Data Analysis Expressions)
