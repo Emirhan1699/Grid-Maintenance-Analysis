@@ -83,12 +83,11 @@ The end-to-end data lifecycle of this project was meticulously designed followin
 </p>
 > 💡 *Key Insight:* Quantifies a consistent 25% to 45% contraction in total outage durations across regional operational centers, proving that maintenance optimization directly translates to minimized downtime and maximized service continuity.
 
-### 🎯 Key Metrics & Visualizations
-The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
-*   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
-*   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
-*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers, highlighting the critical 97.11% MV vs. 2.89% LV customer exposure distribution.
-*   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
+### 🏁 Conclusion & Key Takeaways
+This end-to-end analytical solution successfully bridges the gap between raw grid operations and strategic decision-making. Key takeaways include:
+* **Validated ROI on Maintenance:** Proved that scheduled interventions consistently suppress fault frequencies and reduce restoration times by 25% to 45%.
+* **Strategic Resource Allocation:** Highlighted that Medium Voltage (MV) infrastructure dominates both fault distribution (86.86%) and customer exposure (97.11%), providing a clear roadmap for prioritizing capital investments.
+* **Enhanced Service Reliability:** Demonstrated how data-driven monitoring directly elevates grid resilience and minimizes end-user disruptions.
 
 ### 🛠️ Tools & Techniques
 *   **Business Intelligence:** Power BI (DAX, Interactive Slicers, Custom Tooltips)
@@ -182,8 +181,14 @@ Bu projenin uçtan uca veri yaşam döngüsü, endüstri standartlarına uygun o
 </p>
 > 💡 *Analitik Bulgu:* Bölgesel operasyon merkezlerinde toplam kesinti sürelerinde tutarlı bir şekilde %25 ila %45 daralma olduğunu kantitatif olarak kanıtlayarak, bakım optimizasyonunun doğrudan minimum kesinti süresine (downtime) ve gelişmiş hizmet sürekliliğine dönüştüğünü gösterir.
 
+### 🏁 Sonuç ve Değerlendirme
+Bu uçtan uca analitik çözüm, ham şebeke verileri ile stratejik karar alma mekanizmaları arasındaki köprüyü başarıyla kurmuştur. Projeden elde edilen temel çıkarımlar şunlardır:
+* **Bakım Yatırım Getirisinin (ROI) Doğrulanması:** Planlı müdahalelerin arıza sıklıklarını bastırdığı ve onarım sürelerini %25 ila %45 oranında kısalttığı kanıtlanmıştır.
+* **Stratejik Kaynak Dağılımı:** Orta Gerilim (OG) altyapısının hem arıza dağılımında (%86,86) hem de müşteri maruziyetinde (%97,11) baskın olduğu gösterilerek sermaye yatırımları için net bir yol haritası sunulmuştur.
+* **Gelişmiş Hizmet Güvenilirliği:** Veri odaklı izlemenin şebeke direncini (resilience) doğrudan artırdığı ve son kullanıcı mağduriyetlerini en aza indirdiği kanıtlanmıştır.
+
 ### 🛠️ Kullanılan Araçlar ve Teknikler
 *   **İş Zekası (BI):** Power BI (DAX, İnteraktif Dilimleyiciler, Özel Araç İpuçları)
 *   **Veri Mühendisliği ve ETL:** Python (`pandas`, `numpy`), Excel, Power Query
 *   **Veri Modelleme:** Yıldız Şema Mimarisi (Olgu ve Boyut Tabloları)
-*   **Diller:** Python, DAX (Data Analysis Expressions)
+*   **Languages:** Python, DAX (Data Analysis Expressions)
