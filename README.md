@@ -5,15 +5,29 @@ This project was developed to analyze the impact of grid maintenance operations 
 
 > **🔒 Data Privacy Notice:** Due to company confidentiality, all original datasets have been permanently removed. This repository only contains the Power BI Template (`.pbit`) file, demonstrating the data modeling, DAX measures, and dashboard design.
 
-### 📊 Dashboard Preview
-![Dashboard Preview](Kesinti%20Sayısı%20Degisimi.gif)
+### 📊 Dashboard Views (Dashboard Görünümleri)
+
+**1. Overall Outage Duration Impact (Genel Kesinti Süresi Etkisi)**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Süresi Değişimi.png" width="85%" title="Genel Kesinti Süresi" />
+</p>
+
+**2. Overall Outage Frequency Impact (Genel Kesinti Sayısı Etkisi)**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi.png" width="85%" title="Genel Kesinti Sayısı" />
+</p>
+
+**3. LV vs. MV Frequency Comparison (AG ve OG Kesinti Sayısı Karşılaştırması)**
+<p align="center">
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (AG).png" width="49%" title="AG (Alçak Gerilim) Görünümü" />
+  <img src="Bakım Öncesi ve Sonrası Kesinti Sayısı Değişimi (OG).png" width="49%" title="OG (Orta Gerilim) Görünümü" />
+</p>
 
 ### 🎯 Key Metrics & Visualizations
 The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
 *   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
 *   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
 *   **LV vs. MV Breakdown:** A proportional analysis showing the percentage distribution of outages across Low Voltage (AG) and Medium Voltage (OG) lines.
-*   **Interactive Filtering:** Integrated slicers allowing users to dynamically drill down into data based on LV and MV grid types.
 
 ### 🛠️ Tools & Techniques
 *   **Business Intelligence:** Power BI
@@ -33,7 +47,6 @@ Dashboard, ham şebeke verilerini eyleme dönüştürülebilir iş zekasına (BI
 *   **Bakım Sonucu Süre Değişimi:** Bakım çalışmaları öncesi ve sonrasında kesinti sürelerinde yaşanan değişimi analiz eder.
 *   **Bakım Sonucu Sayı Değişimi:** Bakım operasyonlarının ardından yaşanan kesinti sayılarındaki (frekans) yüzdelik artış veya azalışı takip eder.
 *   **AG ve OG Kesinti Yüzdesi:** Yaşanan kesintilerin oransal olarak ne kadarının Alçak Gerilim (AG), ne kadarının Orta Gerilim (OG) hatlarında gerçekleştiğini gösterir.
-*   **Dinamik Filtreleme:** Kullanıcıların AG ve OG şebeke tiplerine göre kesinti ve bakım verilerini interaktif olarak detaylandırmasına (drill-down) olanak sağlayan dilimleyiciler.
 
 ### 🛠️ Kullanılan Araçlar ve Teknikler
 *   **İş Zekası (BI):** Power BI
