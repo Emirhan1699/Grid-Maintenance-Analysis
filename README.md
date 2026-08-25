@@ -1,189 +1,307 @@
-# ⚡ Grid Maintenance and Outage Impact Analysis 
+# ⚡ Grid Maintenance and Outage Impact Analysis
+
 *🇹🇷 Türkçe versiyon için [aşağıya kaydırın](#türkçe-versiyon)*
 
 ## 📌 Project Overview
-Electrical grid reliability is critical for minimizing service disruptions and ensuring continuous energy delivery. This project was developed to evaluate the quantitative impact of scheduled grid maintenance operations on power outages across various regional operational centers. By transforming raw enterprise grid telemetry and maintenance logs into actionable business intelligence, the dashboard provides deep analytical visibility into how proactive interventions influence fault frequencies, customer disruptions, and total outage durations.
+
+Electrical grid reliability is critical for minimizing service disruptions and ensuring continuous energy delivery. This project was developed to quantitatively evaluate the impact of scheduled grid maintenance operations on power outages across different regional operational centers.
+
+By transforming large-scale outage and maintenance records into actionable business intelligence, the dashboard provides analytical visibility into how maintenance interventions are associated with changes in outage frequency, affected customers, and total outage duration.
 
 ### 🏗️ Project Architecture & Workflow
-The end-to-end data lifecycle of this project was meticulously designed following industry best practices:
-1. **Data Preparation & Cleaning (Python & Excel):** Raw outage logs and field telemetry were initially ingested, cleaned, and structured using Python (`pandas`, `numpy`) and Excel to handle missing values, standardize timestamps, and normalize categorical fields across massive operational datasets.
-2. **ETL & Transformation (Power Query):** The cleaned data was loaded into Power Query for advanced data transformation, conditional column creation, and mapping operational hierarchies.
-3. **Data Modeling (Star Schema):** Built a robust **Star Schema** architecture, separating fact tables (outage events, durations, and affected customer counts) from dimension tables (operational centers, voltage levels, and maintenance status) to ensure optimal query performance and relational integrity.
-4. **Advanced Analytics & DAX:** Developed complex DAX measures (calculating pre- and post-maintenance variance, percentage changes, and aggregated KPIs) to enable dynamic comparisons.
-5. **Interactive Visualization (Power BI):** Designed executive-ready dashboards featuring clean card visuals, dual-axis trend lines, breakdown pie charts, and synchronized regional filters.
+
+The end-to-end data workflow was designed to support reliable analysis and interactive reporting:
+
+1. **Data Preparation & Cleaning (Python & Excel):** Raw outage and maintenance records were cleaned and structured using Python (`pandas`, `numpy`) and Excel. The process included handling missing values, standardizing timestamps, and normalizing categorical fields across large-scale operational datasets.
+
+2. **ETL & Transformation (Power Query):** The prepared data was loaded into Power Query for data transformation, conditional column creation, data standardization, and mapping of operational hierarchies.
+
+3. **Data Modeling (Star Schema):** A **Star Schema** data model was developed by separating fact tables containing outage events, durations, and affected customer counts from dimension tables such as operational centers, voltage levels, and maintenance status.
+
+4. **Advanced Analytics & DAX:** DAX measures were developed to calculate pre- and post-maintenance values, absolute and percentage changes, and aggregated KPIs for dynamic comparisons.
+
+5. **Interactive Visualization (Power BI):** Interactive dashboards were designed using KPI cards, trend visualizations, distribution charts, custom tooltips, and synchronized filters to enable operational analysis across different regions and voltage levels.
 
 ### 🎯 Key Business Questions Addressed
-* **What is the measurable ROI of preventive maintenance?** Quantifying whether scheduled interventions effectively suppress recurring fault frequencies and shorten restoration times.
-* **Where should field operations and capital allocation focus?** Identifying high-impact operational centers and voltage tiers that drive the vast majority of customer disruptions.
-* **How do Medium Voltage (MV) vs. Low Voltage (LV) incidents differ in scale?** Comparing trunk-line stability against localized distribution bottlenecks.
 
-> **🔒 Data Privacy Notice:** Due to strict company confidentiality, all original datasets and the Power BI Template (`.pbit`) file have been permanently excluded. This repository showcases the project design, visual structures, and analytical insights exclusively through documentation and screenshots.
+* **What measurable changes are observed after maintenance interventions?**
+  Evaluating changes in outage frequency, affected customers, and total outage duration between pre- and post-maintenance periods.
+
+* **Where should maintenance efforts be prioritized?**
+  Identifying operational centers and voltage levels with higher outage frequency and customer impact to support maintenance prioritization.
+
+* **How do Medium Voltage (MV) and Low Voltage (LV) incidents differ in scale and impact?**
+  Comparing outage patterns, affected customers, and outage durations across different voltage levels.
+
+### 📈 Measurable Impact
+
+The analysis focuses on three primary measurable outcomes:
+
+* **Outage Frequency:** Changes in the number of outage incidents following maintenance interventions.
+* **Affected Customers:** Changes in the number of customers impacted by outages.
+* **Outage Duration:** Changes in total outage duration across operational centers.
+
+These metrics provide a quantitative basis for evaluating changes in network performance following maintenance activities.
+
+### 🔧 Maintenance Impact
+
+The dashboard provides operational insights that can support maintenance planning by:
+
+* Highlighting operational centers with significant changes in outage performance.
+* Identifying voltage levels associated with higher customer exposure.
+* Comparing LV and MV outage patterns.
+* Supporting the prioritization of maintenance activities based on observed outage and customer impact.
+* Providing a centralized view of maintenance-related performance indicators.
+
+> **🔒 Data Privacy Notice:** Due to company confidentiality requirements, all original datasets and the Power BI Template (`.pbit`) file have been excluded from this repository. The project is presented through documentation, dashboard screenshots, and aggregated analytical findings without exposing confidential source data.
 
 ### 📊 Dashboard Views & Analytical Insights
 
 **1. Overall Outage Frequency Impact**
+
 <p align="center">
   <img src="outage_count_impact.png" width="85%" title="Overall Outage Frequency Impact" />
 </p>
-> 💡 *Key Insight:* Demonstrates a measurable decrease in fault frequency post-intervention, validating the effectiveness of scheduled preventive maintenance in suppressing recurring grid anomalies and enhancing overall network resilience.
+
+> 💡 *Key Insight:* The analysis shows a measurable decrease in outage frequency following maintenance interventions across the analyzed operational centers, indicating improved outage performance during the post-maintenance period.
 
 <br><br>
 
 **2. Outage Source Distribution**
+
 <p align="center">
   <img src="source_distribution.png" width="45%" title="Outage Source Distribution" />
 </p>
-> 💡 *Key Insight:* Highlights that Medium Voltage (MV) lines account for the vast majority of outage distribution (86.86%), indicating that capital allocation and predictive maintenance strategies must prioritize high-voltage feeder networks to maximize ROI on field operations.
+
+> 💡 *Key Insight:* Medium Voltage (MV) lines account for **86.86%** of the analyzed outage distribution, highlighting MV infrastructure as a major area of focus for outage monitoring and maintenance prioritization.
 
 <br><br>
 
 **3. Low Voltage (LV) Outage Frequency Analysis**
+
 <p align="center">
   <img src="lv_outage_analysis.png" width="85%" title="Low Voltage View" />
 </p>
-> 💡 *Key Insight:* Provides granular, localized visibility into Low Voltage network performance, mapping regional response efficiencies and helping operations centers isolate low-tier distribution bottlenecks.
+
+> 💡 *Key Insight:* Provides detailed visibility into Low Voltage network performance, enabling comparisons between operational centers and helping identify localized outage patterns and distribution-level bottlenecks.
 
 <br><br>
 
 **4. Medium Voltage (MV) Outage Frequency Analysis**
+
 <p align="center">
   <img src="mv_outage_analysis.png" width="85%" title="Medium Voltage View" />
 </p>
-> 💡 *Key Insight:* Evaluates trunk-line stability for Medium Voltage infrastructure, illustrating how targeted interventions on critical feeders successfully mitigate widespread outages and protect downstream assets.
+
+> 💡 *Key Insight:* Provides a detailed view of Medium Voltage outage behavior and enables comparison of maintenance-related changes across operational centers and critical feeder networks.
 
 <br><br>
 
 **5. Overall Affected Customers Impact**
+
 <p align="center">
   <img src="affected_customers_impact.png" width="85%" title="Overall Affected Customers Impact" />
 </p>
-> 💡 *Key Insight:* Quantifies a significant post-maintenance reduction in affected customers across operations centers. Furthermore, the proportional breakdown reveals that Medium Voltage (MV) faults drive 97.11% of customer interruptions, whereas Low Voltage (LV) accounts for 2.89%, proving that high-voltage maintenance is the primary driver for protecting large consumer bases.
+
+> 💡 *Key Insight:* The analysis shows a notable reduction in affected customers during the post-maintenance period. Medium Voltage (MV) outages account for **97.11%** of total affected customer exposure, compared with **2.89%** for Low Voltage (LV), emphasizing the larger customer-scale impact of MV incidents.
 
 <br><br>
 
 **6. Low Voltage (LV) Affected Customers Analysis**
+
 <p align="center">
   <img src="lv_affected_customers.png" width="85%" title="Low Voltage Affected Customers" />
 </p>
-> 💡 *Key Insight:* Evaluates localized customer impact within Low Voltage networks (representing 2.89% of overall customer exposure), demonstrating how targeted tier-2 maintenance effectively minimizes residential and small-scale commercial disruptions.
+
+> 💡 *Key Insight:* Examines customer impact within Low Voltage networks, which represent **2.89%** of the total affected customer exposure, providing more granular visibility into localized distribution-level disruptions.
 
 <br><br>
 
 **7. Medium Voltage (MV) Affected Customers Analysis**
+
 <p align="center">
   <img src="mv_affected_customers.png" width="85%" title="Medium Voltage Affected Customers" />
 </p>
-> 💡 *Key Insight:* Focuses on the heavy-impact Medium Voltage tier (accounting for 97.11% of affected customers), illustrating how feeder-line optimization successfully shields massive consumer groups from widespread blackouts.
+
+> 💡 *Key Insight:* Focuses on Medium Voltage networks, which account for **97.11%** of affected customer exposure in the analyzed data, highlighting the broader customer impact associated with MV outages.
 
 <br><br>
 
 **8. Overall Outage Duration Impact**
+
 <p align="center">
   <img src="outage_duration_impact.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
-> 💡 *Key Insight:* Quantifies a consistent 25% to 45% contraction in total outage durations across regional operational centers, proving that maintenance optimization directly translates to minimized downtime and maximized service continuity.
+
+> 💡 *Key Insight:* The analysis indicates a **25%–45% reduction in total outage duration** across the analyzed operational centers during the post-maintenance period, demonstrating a measurable improvement in outage duration performance.
 
 ### 🎯 Key Metrics & Visualizations
-The dashboard focuses on translating raw grid data into actionable business intelligence through the following key visuals:
-*   **Impact on Outage Frequencies:** Tracks the percentage change in the number of outage incidents resulting from maintenance work.
-*   **LV & MV Breakdowns:** Detailed comparative performance metrics separated by grid voltage levels.
-*   **Affected Customers Analysis:** Evaluates the scale of maintenance effectiveness based on the reduction of impacted customers, highlighting the critical 97.11% MV vs. 2.89% LV customer exposure distribution.
-*   **Impact on Outage Durations:** Analyzes the change in total outage durations before and after maintenance interventions.
+
+The dashboard translates operational grid data into measurable performance indicators through the following key visualizations:
+
+* **Outage Frequency Impact:** Measures changes in the number of outage incidents between pre- and post-maintenance periods.
+* **LV & MV Breakdown:** Provides comparative analysis of outage performance across voltage levels.
+* **Affected Customers Analysis:** Measures changes in customer exposure and highlights the **97.11% MV vs. 2.89% LV** distribution.
+* **Outage Duration Impact:** Measures changes in total outage duration following maintenance interventions.
+* **Operational Center Comparison:** Enables regional comparison of maintenance-related changes and outage performance.
 
 ### 🛠️ Tools & Techniques
-*   **Business Intelligence:** Power BI (DAX, Interactive Slicers, Custom Tooltips)
-*   **Data Engineering & ETL:** Python (`pandas`, `numpy`), Excel, Power Query
-*   **Data Modeling:** Star Schema Architecture (Fact & Dimension Tables)
-*   **Languages:** Python, DAX (Data Analysis Expressions)
+
+* **Business Intelligence:** Power BI (DAX, Interactive Slicers, Custom Tooltips)
+* **Data Engineering & ETL:** Python (`pandas`, `numpy`), Excel, Power Query
+* **Data Modeling:** Star Schema Architecture (Fact & Dimension Tables)
+* **Languages:** Python, DAX (Data Analysis Expressions)
 
 ---
 
 <h2 id="türkçe-versiyon">⚡ Şebeke Bakım ve Kesinti Etki Analizi</h2>
 
 ## 📌 Proje Özeti
-Elektrik şebekesi güvenilirliği, enerji kesintilerinin en aza indirilmesi ve kesintisiz enerji arzının sağlanması açısından hayati önem taşır. Bu proje, planlı şebeke bakım operasyonlarının farklı bölgesel operasyon merkezlerindeki güç kesintileri üzerindeki kantitatif etkisini değerlendirmek amacıyla geliştirilmiştir. Yüz binlerce arıza kaydı ve bakım logunu içeren büyük ölçekli kurumsal şebeke verileri iş zekasına dönüştürülerek; proaktif müdahalelerin arıza sıklıklarını, müşteri mağduriyetlerini ve toplam kesinti sürelerini nasıl optimize ettiğine dair derinlemesine analitik içgörüler sunulmuştur.
+
+Elektrik şebekesi güvenilirliği, enerji kesintilerinin en aza indirilmesi ve kesintisiz enerji arzının sağlanması açısından kritik öneme sahiptir. Bu proje, planlı şebeke bakım operasyonlarının farklı bölgesel operasyon merkezlerindeki kesinti performansı üzerindeki etkisini kantitatif olarak değerlendirmek amacıyla geliştirilmiştir.
+
+Büyük ölçekli arıza ve bakım kayıtları iş zekasına dönüştürülerek; bakım müdahaleleri sonrasında **kesinti sıklığı, etkilenen abone sayısı ve toplam kesinti süresinde gözlemlenen değişimlere** ilişkin analitik görünürlük sağlanmıştır.
 
 ### 🏗️ Proje Mimarisi ve İş Akışı
-Bu projenin uçtan uca veri yaşam döngüsü, endüstri standartlarına uygun olarak titizlikle tasarlanmıştır:
-1. **Veri Hazırlama ve Temizleme (Python & Excel):** Ham arıza logları ve saha telemetrisi; eksik verilerin işlenmesi, zaman damgalarının standardize edilmesi ve kategorik alanların normalleştirilmesi için Python (`pandas`, `numpy`) ve Excel kullanılarak işlenmiştir.
-2. **ETL ve Dönüştürme (Power Query):** Temizlenen veriler, gelişmiş veri dönüşümleri, koşullu sütun oluşturma ve operasyonel hiyerarşilerin haritalandırılması için Power Query'ye aktarılmıştır.
-3. **Veri Modelleme (Yıldız Şema - Star Schema):** Sorgu performansını ve ilişkisel bütünlüğü maksimize etmek amacıyla; olgu tablolarını (arıza olayları, süreler ve etkilenen abone sayıları) boyut tablolarından (operasyon merkezleri, gerilim seviyeleri ve bakım durumu) ayıran sağlam bir Yıldız Şema mimarisi kurulmuştur.
-4. **İleri Düzey Analitik ve DAX:** Dinamik karşılaştırmalara olanak tanımak için gelişmiş DAX formülleri (bakım öncesi/sonrası varyans, yüzde değişim ve birleştirilmiş KPI hesaplamaları) geliştirilmiştir.
-5. **İnteraktif Görselleştirme (Power BI):** Temiz kart görünümleri, çift eksenli trend çizgileri, dağılım pastaları ve senkronize bölgesel filtrelerle yönetici seviyesinde raporlar tasarlanmıştır.
+
+Projenin uçtan uca veri iş akışı, güvenilir analiz ve interaktif raporlama ihtiyaçları doğrultusunda tasarlanmıştır:
+
+1. **Veri Hazırlama ve Temizleme (Python & Excel):** Ham kesinti ve bakım kayıtları Python (`pandas`, `numpy`) ve Excel kullanılarak temizlenmiş ve yapılandırılmıştır. Süreç kapsamında eksik verilerin işlenmesi, zaman bilgilerinin standardize edilmesi ve kategorik alanların normalleştirilmesi gerçekleştirilmiştir.
+
+2. **ETL ve Dönüştürme (Power Query):** Hazırlanan veriler; veri dönüşümü, koşullu sütun oluşturma, veri standardizasyonu ve operasyonel hiyerarşilerin eşleştirilmesi amacıyla Power Query'ye aktarılmıştır.
+
+3. **Veri Modelleme (Yıldız Şema - Star Schema):** Kesinti olayları, kesinti süreleri ve etkilenen abone sayılarını içeren olgu tabloları; operasyon merkezleri, gerilim seviyeleri ve bakım durumu gibi boyut tablolarından ayrıştırılarak **Yıldız Şema** veri modeli oluşturulmuştur.
+
+4. **İleri Düzey Analitik ve DAX:** Bakım öncesi ve sonrası değerleri, mutlak ve yüzdesel değişimleri ve toplulaştırılmış KPI'ları hesaplamak için DAX ölçüleri geliştirilmiştir.
+
+5. **İnteraktif Görselleştirme (Power BI):** KPI kartları, trend görselleri, dağılım grafikleri, özel araç ipuçları ve senkronize filtreler kullanılarak farklı bölgeler ve gerilim seviyeleri arasında karşılaştırmalı analiz yapılmasını sağlayan dashboard'lar tasarlanmıştır.
 
 ### 🎯 Çözülen Temel İş Soruları
-* **Koruyucu bakımların ölçülebilir yatırım getirisi (ROI) nedir?** Planlı müdahalelerin tekrarlayan arıza sıklıklarını ne ölçüde bastırdığı ve onarım sürelerini kısalttığı analiz edilmiştir.
-* **Saha operasyonları ve sermaye tahsisi nereye odaklanmalıdır?** Müşteri mağduriyetlerinin büyük kısmını tetikleyen kritik operasyon merkezleri ve gerilim kademeleri izole edilmiştir.
-* **Orta Gerilim (OG) ve Alçak Gerilim (AG) olayları ölçek olarak nasıl ayrışır?** Ana hat omurga kararlılığı ile yerel dağıtım darboğazları kıyaslanmıştır.
 
-> **🔒 Veri Gizliliği Notu:** Şirket gizlilik politikaları gereği, tüm orijinal veri setleri ve Power BI Şablon (`.pbit`) dosyası kapsam dışı bırakılmıştır. Bu depo, dokümantasyon ve ekran görüntüleri aracılığıyla proje tasarımını, görsel yapıları ve analitik içgörüleri sergilemektedir.
+* **Bakım müdahaleleri sonrasında hangi ölçülebilir değişimler gözlemleniyor?**
+  Bakım öncesi ve sonrası dönemler karşılaştırılarak kesinti sayısı, etkilenen abone sayısı ve toplam kesinti süresindeki değişimler değerlendirilmiştir.
+
+* **Bakım çalışmalarında hangi alanlara öncelik verilmelidir?**
+  Daha yüksek kesinti sıklığına ve müşteri etkisine sahip operasyon merkezleri ve gerilim seviyeleri belirlenerek bakım önceliklendirmesine yönelik içgörüler sağlanmıştır.
+
+* **Orta Gerilim (OG) ve Alçak Gerilim (AG) olayları ölçek ve etki açısından nasıl ayrışıyor?**
+  Farklı gerilim seviyelerindeki kesinti davranışları, etkilenen abone sayıları ve kesinti süreleri karşılaştırılmıştır.
+
+### 📈 Measurable Impact — Ölçülebilir Etki
+
+Analiz üç temel ölçülebilir sonuca odaklanmaktadır:
+
+* **Kesinti Sıklığı:** Bakım müdahaleleri sonrasında kesinti olaylarının sayısındaki değişim.
+* **Etkilenen Aboneler:** Kesintilerden etkilenen abone sayısındaki değişim.
+* **Kesinti Süresi:** Operasyon merkezlerindeki toplam kesinti süresindeki değişim.
+
+Bu göstergeler, bakım faaliyetleri sonrasında şebeke performansında gözlemlenen değişimlerin kantitatif olarak değerlendirilmesini sağlamaktadır.
+
+### 🔧 Maintenance Impact — Bakım Etkisi
+
+Dashboard, bakım planlama süreçlerini destekleyebilecek aşağıdaki operasyonel içgörüleri sunmaktadır:
+
+* Kesinti performansında belirgin değişimler gösteren operasyon merkezlerinin belirlenmesi.
+* Daha yüksek müşteri maruziyetine sahip gerilim seviyelerinin tespit edilmesi.
+* AG ve OG kesinti davranışlarının karşılaştırılması.
+* Gözlemlenen kesinti ve müşteri etkilerine göre bakım faaliyetlerinin önceliklendirilmesinin desteklenmesi.
+* Bakım sonrası performans göstergelerinin merkezi bir dashboard üzerinden takip edilmesi.
+
+> **🔒 Veri Gizliliği Notu:** Şirket gizlilik gereklilikleri nedeniyle tüm orijinal veri setleri ve Power BI Şablon (`.pbit`) dosyası bu depoya dahil edilmemiştir. Proje; gizli kaynak veriler paylaşılmadan dokümantasyon, dashboard ekran görüntüleri ve toplulaştırılmış analitik bulgular üzerinden sunulmaktadır.
 
 ### 📊 Dashboard Görünümleri ve Bulgular
 
 **1. Genel Kesinti Sayısı Etkisi**
+
 <p align="center">
   <img src="outage_count_impact.png" width="85%" title="Genel Kesinti Sayısı" />
 </p>
-> 💡 *Analitik Bulgu:* Müdahaleler sonrasında arıza sıklığında ölçülebilir bir düşüş olduğunu göstererek, planlı koruyucu bakımların tekrarlayan şebeke anomalilerini bastırmadaki ve şebeke direncini (resilience) artırmadaki etkinliğini doğrular.
+
+> 💡 *Analitik Bulgu:* Analiz edilen operasyon merkezlerinde bakım müdahaleleri sonrasında kesinti sıklığında ölçülebilir bir düşüş gözlemlenmiştir. Bu durum, bakım sonrası dönemde kesinti performansında iyileşme olduğunu göstermektedir.
 
 <br><br>
 
-**2. Kaynak Dağılımı**
+**2. Kesinti Kaynak Dağılımı**
+
 <p align="center">
-  <img src="source_distribution.png" width="45%" title="Kaynak Dağılımı" />
+  <img src="source_distribution.png" width="45%" title="Kesinti Kaynak Dağılımı" />
 </p>
-> 💡 *Analitik Bulgu:* Kesintilerin çok büyük bir kısmının (%86,86) Orta Gerilim (OG) hatlarından kaynaklandığını ortaya koyarak; saha operasyonlarında yatırım getirisini (ROI) maksimize etmek için sermaye tahsisi ve kestirimci bakım stratejilerinin ana besleme hatlarına odaklanması gerektiğini vurgular.
+
+> 💡 *Analitik Bulgu:* Analiz edilen kesintilerin **%86,86'sının Orta Gerilim (OG)** hatlarıyla ilişkili olduğu görülmektedir. Bu sonuç, OG altyapısının kesinti izleme ve bakım önceliklendirmesinde önemli bir odak noktası olduğunu göstermektedir.
 
 <br><br>
 
 **3. Alçak Gerilim (AG) Kesinti Analizi**
+
 <p align="center">
   <img src="lv_outage_analysis.png" width="85%" title="AG Görünümü" />
 </p>
-> 💡 *Analitik Bulgu:* Alçak gerilim şebeke performansına bölgesel ve ayrıntılı bir vizyon kazandırarak, operasyon merkezlerinin uç nokta dağıtım darboğazlarını izole etmesine ve yerel müdahale etkinliğini haritalandırmasına olanak tanır.
+
+> 💡 *Analitik Bulgu:* Alçak Gerilim şebeke performansına ilişkin ayrıntılı görünürlük sağlayarak operasyon merkezleri arasındaki farklılıkların ve yerel dağıtım seviyesindeki kesinti modellerinin incelenmesine olanak tanımaktadır.
 
 <br><br>
 
 **4. Orta Gerilim (OG) Kesinti Analizi**
+
 <p align="center">
   <img src="mv_outage_analysis.png" width="85%" title="OG Görünümü" />
 </p>
-> 💡 *Analitik Bulgu:* Kritik orta gerilim altyapısı için ana hat kararlılığını değerlendirerek, kritik besleyiciler üzerinde yapılan hedefli müdahalelerin yaygın kesintileri nasıl başarıyla önlediğini ve alt şebeke varlıklarını koruduğunu gösterir.
+
+> 💡 *Analitik Bulgu:* Orta Gerilim kesintilerinin operasyon merkezleri ve bakım dönemleri arasındaki değişimini inceleyerek kritik besleme hatlarının performansının karşılaştırılmasını sağlamaktadır.
 
 <br><br>
 
-**5. Genel Etkilenen Müşteri Sayısı Etkisi**
+**5. Genel Etkilenen Abone Sayısı Etkisi**
+
 <p align="center">
-  <img src="affected_customers_impact.png" width="85%" title="Genel Etkilenen Müşteri Sayısı" />
+  <img src="affected_customers_impact.png" width="85%" title="Genel Etkilenen Abone Sayısı" />
 </p>
-> 💡 *Analitik Bulgu:* Bakım sonrasında operasyon merkezlerindeki etkilenen müşteri sayılarında belirgin bir düşüş olduğunu kantitatif olarak kanıtlar. Ayrıca, kesintilerden etkilenen müşterilerin %97,11'inin Orta Gerilim (OG), %2,89'unun ise Alçak Gerilim (AG) kaynaklı olduğunu göstererek yüksek gerilim bakımlarının kitleler üzerindeki koruyucu etkisini gözler önüne serer.
+
+> 💡 *Analitik Bulgu:* Bakım sonrası dönemde etkilenen abone sayısında belirgin bir azalma gözlemlenmiştir. Analiz edilen verilerde etkilenen abonelerin **%97,11'i Orta Gerilim (OG)**, **%2,89'u ise Alçak Gerilim (AG)** kesintileriyle ilişkilidir. Bu dağılım, OG kesintilerinin müşteri ölçeğindeki etkisinin daha yüksek olduğunu göstermektedir.
 
 <br><br>
 
-**6. Alçak Gerilim (AG) Etkilenen Müşteri Analizi**
+**6. Alçak Gerilim (AG) Etkilenen Abone Analizi**
+
 <p align="center">
-  <img src="lv_affected_customers.png" width="85%" title="AG Etkilenen Müşteriler" />
+  <img src="lv_affected_customers.png" width="85%" title="AG Etkilenen Aboneler" />
 </p>
-> 💡 *Analitik Bulgu:* Toplam müşteri maruziyetinin %2,89'unu oluşturan Alçak Gerilim şebekesindeki yerel müşteri etkilerini değerlendirerek, uç nokta bakımlarının konut ve küçük ölçekli ticari kesintileri nasıl azalttığını inceler.
+
+> 💡 *Analitik Bulgu:* Toplam etkilenen abone maruziyetinin **%2,89'unu** oluşturan Alçak Gerilim kesintilerinin yerel müşteri etkisini incelemekte ve dağıtım seviyesindeki farklılıkların daha ayrıntılı şekilde değerlendirilmesini sağlamaktadır.
 
 <br><br>
 
-**7. Orta Gerilim (OG) Etkilenen Müşteri Analizi**
+**7. Orta Gerilim (OG) Etkilenen Abone Analizi**
+
 <p align="center">
-  <img src="mv_affected_customers.png" width="85%" title="OG Etkilenen Müşteriler" />
+  <img src="mv_affected_customers.png" width="85%" title="OG Etkilenen Aboneler" />
 </p>
-> 💡 *Analitik Bulgu:* Etkilenen müşteri kitlesinin %97,11 gibi ezici bir oranını barındıran kritik Orta Gerilim besleme hatlarına odaklanarak, yüksek gerilim optimizasyonunun geniş tüketici gruplarını yaygın kesintilerden korumadaki hayati rolünü vurgular.
+
+> 💡 *Analitik Bulgu:* Etkilenen abone maruziyetinin **%97,11'ini** oluşturan Orta Gerilim kesintilerine odaklanarak OG altyapısındaki kesintilerin geniş müşteri grupları üzerindeki etkisini ortaya koymaktadır.
 
 <br><br>
 
 **8. Genel Kesinti Süresi Etkisi**
+
 <p align="center">
   <img src="outage_duration_impact.png" width="85%" title="Genel Kesinti Süresi" />
 </p>
-> 💡 *Analitik Bulgu:* Bölgesel operasyon merkezlerinde toplam kesinti sürelerinde tutarlı bir şekilde %25 ila %45 daralma olduğunu kantitatif olarak kanıtlayarak, bakım optimizasyonunun doğrudan minimum kesinti süresine (downtime) ve gelişmiş hizmet sürekliliğine dönüştüğünü gösterir.
+
+> 💡 *Analitik Bulgu:* Analiz edilen operasyon merkezlerinde bakım sonrası dönemde toplam kesinti süresinde **%25–%45 arasında azalma** gözlemlenmiştir. Bu sonuç, bakım sonrası dönemde kesinti süresi performansında ölçülebilir bir iyileşmeye işaret etmektedir.
+
+### 🎯 Temel Metrikler ve Görselleştirmeler
+
+Dashboard, operasyonel şebeke verilerini ölçülebilir performans göstergelerine dönüştürmektedir:
+
+* **Kesinti Sıklığı Etkisi:** Bakım öncesi ve sonrası dönemler arasındaki kesinti sayısı değişimini ölçer.
+* **AG & OG Dağılımı:** Gerilim seviyelerine göre kesinti performansını karşılaştırır.
+* **Etkilenen Abone Analizi:** Müşteri maruziyetindeki değişimleri ölçer ve **%97,11 OG – %2,89 AG** dağılımını gösterir.
+* **Kesinti Süresi Etkisi:** Bakım müdahaleleri sonrasında toplam kesinti süresindeki değişimi ölçer.
+* **Operasyon Merkezi Karşılaştırması:** Bakım sonrası değişimleri ve kesinti performansını bölgesel olarak karşılaştırır.
 
 ### 🛠️ Kullanılan Araçlar ve Teknikler
-*   **İş Zekası (BI):** Power BI (DAX, İnteraktif Dilimleyiciler, Özel Araç İpuçları)
-*   **Veri Mühendisliği ve ETL:** Python (`pandas`, `numpy`), Excel, Power Query
-*   **Veri Modelleme:** Yıldız Şema Mimarisi (Olgu ve Boyut Tabloları)
-*   **Diller:** Python, DAX (Data Analysis Expressions)
+
+* **İş Zekası (BI):** Power BI (DAX, İnteraktif Dilimleyiciler, Özel Araç İpuçları)
+* **Veri Mühendisliği ve ETL:** Python (`pandas`, `numpy`), Excel, Power Query
+* **Veri Modelleme:** Yıldız Şema Mimarisi (Olgu ve Boyut Tabloları)
+* **Diller:** Python, DAX (Data Analysis Expressions)
