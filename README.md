@@ -140,7 +140,7 @@ The dashboard provides operational insights that can support maintenance plannin
   <img src="outage_duration_impact.png" width="85%" title="Overall Outage Duration Impact" />
 </p>
 
-> 💡 *Key Insight:* The analysis indicates a **25%–45% reduction in total outage duration** across the analyzed operational centers during the post-maintenance period, demonstrating a measurable improvement in outage duration performance.
+> 💡 *Key Insight:* The analysis indicates a **25%–45% reduction in total outage duration** across the analyzed operational centers during the post-maintenance period, indicating a measurable improvement in outage duration performance.
 
 ---
 
@@ -150,10 +150,10 @@ This end-to-end analytical solution demonstrates how raw grid maintenance and ou
 
 Key takeaways include:
 * **Measurable Performance Improvements:** Scheduled maintenance interventions are associated with consistent decreases in outage frequency and a **25%–45% reduction in total outage duration** across regional operational centers.
-* **Targeted Resource Allocation:** Medium Voltage (MV) infrastructure drives the vast majority of both outage distribution (**86.86%**) and customer exposure (**97.11%**), providing clear guidance for prioritizing grid maintenance and capital allocation.
+* **Targeted Resource Allocation:** Medium Voltage (MV) infrastructure drives the vast majority of both outage distribution (**86.86%**) and customer exposure (**97.11%**), providing a clear indication of where maintenance prioritization may have the greatest operational impact.
 * **Data-Driven Evaluation:** Establishing a structured pre- and post-maintenance comparison framework enables organizations to objectively track network reliability and operational efficiency.
 
-> **Note:** The analysis evaluates the observed relationship between scheduled maintenance activities and outage performance metrics within the available dataset. It reflects operational impact rather than a direct financial ROI calculation.
+> **Note:** The analysis evaluates the observed relationship between scheduled maintenance activities and outage performance metrics within the available dataset. It focuses on operational impact rather than financial outcomes.
 
 ---
 
@@ -320,11 +320,11 @@ Dashboard, bakım planlama süreçlerini destekleyebilecek aşağıdaki operasyo
 Bu uçtan uca analitik çözüm, ham şebeke bakım ve kesinti verilerinin operasyonel karar alma süreçlerinde kullanılabilecek anlamlı içgörülere dönüştürülebileceğini somut bir şekilde ortaya koymaktadır.
 
 Projeden elde edilen temel çıkarımlar:
-* **Ölçülebilir Performans İyileşmesi:** Planlı bakım müdahalelerinin, kesinti sıklığında düşüş ve bölgesel operasyon merkezlerinde toplam kesinti süresinde **%25–%45 oranında azalma** ile güçlü bir şekilde ilişkili olduğu kanıtlanmıştır.
+* **Ölçülebilir Performans İyileşmesi:** Planlı bakım müdahalelerinin, kesinti sıklığında düşüş ve bölgesel operasyon merkezlerinde toplam kesinti süresinde **%25–%45 oranında azalma** ile ilişkili olduğu gözlemlenmiştir.
 * **Hedef Odaklı Kaynak Tahsisi:** Orta Gerilim (OG) altyapısının, toplam kesinti aktivitesinin **%86,86'sını** ve etkilenen abone maruziyetinin **%97,11'ini** oluşturduğu tespit edilerek şebeke yatırımları ve bakım planlaması için net bir öncelik alanı tanımlanmıştır.
 * **Veri Odaklı Değerlendirme:** Oluşturulan yapılandırılmış bakım öncesi ve sonrası analiz çerçevesi sayesinde, şebeke güvenilirliği objektif metriklerle takip edilebilir hale getirilmiştir.
 
-> **Not:** Bu analiz, mevcut veri setindeki planlı bakım faaliyetleri ile kesinti performans göstergeleri arasındaki gözlemlenen ilişkileri değerlendirir; doğrudan finansal bir yatırım getirisi (ROI) veya nedensellik hesabı olarak yorumlanmamalıdır.
+> **Not:** Bu analiz, mevcut veri setindeki planlı bakım faaliyetleri ile kesinti performans göstergeleri arasındaki gözlemlenen ilişkiyi değerlendirir. Çalışma operasyonel etkiye odaklanmakta olup finansal sonuçları kapsamamaktadır.
 
 ---
 
@@ -338,9 +338,9 @@ Dashboard, operasyonel şebeke verilerini ölçülebilir performans göstergeler
 * **Kesinti Süresi Etkisi:** Bakım müdahaleleri sonrasında toplam kesinti süresindeki değişimi ölçer.
 * **Operasyon Merkezi Karşılaştırması:** Bakım sonrası değişimleri ve kesinti performansını bölgesel olarak karşılaştırır.
 
-### 🛠️ Kullanılan Araçlar ve Teknikler
+### 🛠️ Tools & Techniques
 
-* **İş Zekası (BI):** Power BI (DAX, İnteraktif Dilimleyiciler, Özel Araç İpuçları)
-* **Veri Mühendisliği ve ETL:** Python (`pandas`, `numpy`), Excel, Power Query
-* **Veri Modelleme:** Yıldız Şema Mimarisi (Olgu ve Boyut Tabloları)
-* **Diller:** Python, DAX (Data Analysis Expressions)
+* **Business Intelligence:** Power BI (DAX, Interactive Slicers, Custom Tooltips)
+* **Data Engineering & ETL:** Python (`pandas`, `numpy`), Excel, Power Query
+* **Data Modeling:** Star Schema Architecture (Fact & Dimension Tables)
+* **Languages:** Python, DAX (Data Analysis Expressions)
