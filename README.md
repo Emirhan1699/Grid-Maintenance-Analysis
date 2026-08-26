@@ -1,6 +1,6 @@
 # ⚡ Grid Maintenance and Outage Impact Analysis
 
-🇹🇷 [Türkçe versiyon için aşağıya kaydırın](#-şebeke-bakım-ve-kesinti-etki-analizi)
+🇹🇷 [Türkçe versiyon için tıklayın](#-şebeke-bakım-ve-kesinti-etki-analizi)
 
 ## 📌 Project Overview
 
